@@ -1,0 +1,77 @@
+
+/* Stile base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+header img {
+    width: 30%; /* Riduce all'80% della dimensione originale */
+    max-width: 600px; /* Evita che diventi troppo grande su schermi grandi */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+  text-align:left;
+}
+
+/* Contenitore della tabella per scroll su mobile */
+.table-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: auto; /* Permette lo scroll su dispositivi piccoli */
+}
+
+/* Stile tabella */
+table {
+    width: 100%;
+    min-width: 600px; /* Evita che le colonne si comprimano troppo */
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Mobile: migliora leggibilità */
+@media (max-width: 600px) {
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Tablet: aumenta leggermente la grandezza della tabella */
+@media (min-width: 601px) and (max-width: 1024px) {
+    table {
+        min-width: 700px;
+    }
+}
+
+/* Desktop: margini più ampi */
+@media (min-width: 1025px) {
+    .table-container {
+        width: 70%;
+    }
+}
