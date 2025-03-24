@@ -224,7 +224,7 @@ var fattureSpeseStraordinarie = [
     {
         data: "01/10/2024",
         intestatario: "FDR Automazioni di Riffaldi Fausto & C S.N.C.",
-        descrizione: "Ibtervento per sistemazione porta trovata bloccata in apertura e rumorosa ",
+        descrizione: "Intervento per sistemazione porta trovata bloccata in apertura e rumorosa ",
         importo: "63,60",
         contestata: true,
     },
@@ -295,17 +295,17 @@ var fattureManutenzione = [
         contestata: false,
     },
     {
-        data: "28/02/2025",
-        intestatario: "A CINQUE TECNOLOGIA S.P.A.",
-        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Febbraio 2025",
-        importo: "169,80",
-        contestata: false,
-    },
-    {
         data: "31/01/2025",
         intestatario: "A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Gennaio 2025",
         importo: "172,80",
+        contestata: false,
+    },
+    {
+        data: "28/02/2025",
+        intestatario: "A CINQUE TECNOLOGIA S.P.A.",
+        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Febbraio 2025",
+        importo: "169,80",
         contestata: false,
     },
     {
@@ -334,8 +334,15 @@ var fattureCertificazioni = [
     {
         data: "14/03/2025",
         intestatario: "DALLA GIOVANNA GROUP S.R.L.",
-        descrizione: "Verifica necessità prevenzione fulminazioni",
+        descrizione: "Incarico per verifica della necessità di realizzazione impianto di protezione contro fulminiai sensi della norma CEI EN 62305 1-2-3-4. Sopralluogo analisi impianti valutazione del rischio e misure di protezione + rilascio relazione totale della struttura",
         importo: "305,00",
+        contestata: false,
+    },
+    {
+        data: "14/03/2025",
+        intestatario: "DALLA GIOVANNA GROUP S.R.L.",
+        descrizione: "Registro anagrafe sicurezza + sopralluogo tecnico specializzato + analisi riordino dei documenti tecnici presso studio amministrativo",
+        importo: "451,40",
         contestata: false,
     },
     {
@@ -474,6 +481,22 @@ const certificazioni: Certificazione[] = [
     },
 
 ];*/
+function AddPuntoMigliaia(numero) {
+    // Converto la stringa in numero per il controllo
+    var valoreNumerico = parseFloat(numero.replace(',', '.'));
+    // Se il valore è inferiore a 1000, restituisco la stringa originale
+    if (valoreNumerico < 1000) {
+        return numero;
+    }
+    // Separare la parte intera e decimale
+    var parti = numero.split(',');
+    var parteIntera = parti[0];
+    var parteDecimale = parti.length > 1 ? parti[1] : '';
+    // Aggiungere il punto come separatore delle migliaia
+    parteIntera = parteIntera.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    // Ricostruire il numero formattato
+    return parteDecimale.length > 0 ? parteIntera + ',' + parteDecimale : parteIntera;
+}
 function popolaTabella(Tabella, fatture) {
     var tbody = document.querySelector("#" + Tabella + " tbody");
     var totale = 0;
@@ -517,6 +540,7 @@ function popolaTabella(Tabella, fatture) {
                 cellaImporto.textContent = cellaImporto.textContent + ",00";
             }
         }
+        cellaImporto.textContent = AddPuntoMigliaia(cellaImporto.textContent);
         riga.appendChild(cellaData);
         riga.appendChild(cellaIntestatario);
         riga.appendChild(cellaDescrizione);
@@ -545,6 +569,8 @@ function popolaTabelle() {
     var cellaImporto = document.createElement("td");
     cellaImporto.style.textAlign = "right";
     cellaImporto.textContent = TotaleGlobale.toFixed(2);
+    cellaImporto.textContent = cellaImporto.textContent.replace(/\./g, ",");
+    cellaImporto.textContent = AddPuntoMigliaia(cellaImporto.textContent);
     riga.appendChild(cellaData);
     riga.appendChild(cellaIntestatario);
     riga.appendChild(cellaDescrizione);
