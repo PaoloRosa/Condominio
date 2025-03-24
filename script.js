@@ -4,24 +4,28 @@ var fattureAmministrazione = [
         intestatario: "Studio Berti S.A.S. di Berti Luca & C",
         descrizione: "Acconto compenso gestione ordinaria 2024/25",
         importo: "488,00",
+        contestata: false,
     },
     {
         data: "31/01/2025",
         intestatario: "Studio Berti S.A.S. di Berti Luca & C",
         descrizione: "Adempimenti fiscali gestione 2024/25",
         importo: "427,00",
+        contestata: false,
     },
     {
         data: "31/01/2025",
         intestatario: "Studio Berti S.A.S. di Berti Luca & C",
         descrizione: "Acconto compenso gestione ordinaria 2024/25",
         importo: "610,00",
+        contestata: false,
     },
     {
         data: "",
         intestatario: "",
         descrizione: "Totale",
         importo: "",
+        contestata: false,
     },
 ];
 var fatturePulizie = [
@@ -30,36 +34,42 @@ var fatturePulizie = [
         intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
         descrizione: "Servizio di pulizia mese di Ottobre",
         importo: "610,00",
+        contestata: false,
     },
     {
         data: "30/11/2024",
         intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
         descrizione: "Servizio di pulizia mese di Novembre",
         importo: "610,00",
+        contestata: false,
     },
     {
         data: "31/12/2024",
         intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
         descrizione: "Servizio di pulizia mese di Dicembre",
         importo: "610,00",
+        contestata: false,
     },
     {
         data: "31/01/2025",
         intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
         descrizione: "Servizio di pulizia mese di Gennaio",
         importo: "610,00",
+        contestata: false,
     },
     {
         data: "28/02/2025",
         intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
         descrizione: "Servizio di pulizia mese di Febbraio",
         importo: "610,00",
+        contestata: false,
     },
     {
         data: "",
         intestatario: "",
         descrizione: "Totale",
         importo: "",
+        contestata: false,
     },
 ];
 var fattureRiscaldamento = [
@@ -68,42 +78,49 @@ var fattureRiscaldamento = [
         intestatario: "A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "teleriscaldamento dal 1/05/2024 al 31/05/2024",
         importo: "189,90",
+        contestata: false,
     },
     {
         data: "17/10/2024",
         intestatario: "A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "teleriscaldamento dal 1/06/2024 al 30/09/2024",
         importo: "134,75",
+        contestata: false,
     },
     {
         data: "15/11/2024",
         intestatario: "A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "teleriscaldamento dal 1/10/2024 al 31/10/2024",
         importo: "788,00",
+        contestata: false,
     },
     {
         data: "16/12/2024",
         intestatario: "A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "teleriscaldamento dal 1/11/2024 al 30/11/2024",
         importo: "2800,95",
+        contestata: false,
     },
     {
         data: "31/12/2024",
         intestatario: "A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "teleriscaldamento dal 1/12/2024 al 31/12/2024",
         importo: "3995,97",
+        contestata: false,
     },
     {
         data: "31/01/2025",
         intestatario: "A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "teleriscaldamento dal 1/01/2025 al 31/01/2025",
         importo: "4278,53",
+        contestata: false,
     },
     {
         data: "",
         intestatario: "",
         descrizione: "Totale",
         importo: "",
+        contestata: false,
     },
 ];
 var fattureEnergiaElettrica = [
@@ -112,36 +129,42 @@ var fattureEnergiaElettrica = [
         intestatario: "ESA Energie S.P.A.",
         descrizione: "Fornitura energia elettrica Periodo Ottobre 2024",
         importo: "277,00",
+        contestata: false,
     },
     {
         data: "30/11/2024",
         intestatario: "ESA Energie S.P.A.",
         descrizione: "Fornitura energia elettrica Periodo Novembre 2024",
         importo: "318,00",
+        contestata: false,
     },
     {
         data: "31/12/2024",
         intestatario: "ESA Energie S.P.A.",
         descrizione: "Fornitura energia elettrica Periodo Dicembre 2024",
         importo: "332,00",
+        contestata: false,
     },
     {
         data: "31/01/2025",
         intestatario: "ESA Energie S.P.A.",
         descrizione: "Fornitura energia elettrica Periodo Gennaio 2025",
         importo: "347,00",
+        contestata: false,
     },
     {
         data: "28/02/2025",
         intestatario: "ESA Energie S.P.A.",
         descrizione: "Fornitura energia elettrica Periodo Febbraio 2025",
         importo: "0,00",
+        contestata: false,
     },
     {
         data: "",
         intestatario: "",
         descrizione: "Totale",
         importo: "",
+        contestata: false,
     },
 ];
 var fattureAcqua = [
@@ -150,12 +173,14 @@ var fattureAcqua = [
         intestatario: "BRIANZACQUE S.r.l.",
         descrizione: "Fornitura acqua potabile 4° periodo 2024",
         importo: "1220,00",
+        contestata: false,
     },
     {
         data: "",
         intestatario: "",
         descrizione: "Totale",
         importo: "",
+        contestata: false,
     },
 ];
 var fattureSpeseLegali = [
@@ -164,24 +189,28 @@ var fattureSpeseLegali = [
         intestatario: "DOTT. Lorenzo Mauri",
         descrizione: "Verifica ipotecaria catastale/storica C/O Agenzia entrate box sub 103",
         importo: "210,00",
+        contestata: false,
     },
     {
         data: "23/10/2024",
         intestatario: "DOTT. Lorenzo Mauri",
         descrizione: "Verifica ipotecaria catastale/storica C/O Agenzia entrate box sub 103",
         importo: "522,00",
+        contestata: false,
     },
     {
         data: "12/03/2025",
         intestatario: "Avvocato Laura Dameno",
         descrizione: "Assistenza stragiudiziale ricerca e parere box sub 103",
         importo: "779,56",
+        contestata: false,
     },
     {
         data: "",
         intestatario: "",
         descrizione: "Totale",
         importo: "",
+        contestata: false,
     },
 ];
 var fattureSpeseStraordinarie = [
@@ -190,48 +219,56 @@ var fattureSpeseStraordinarie = [
         intestatario: "Electric Service di Crippa Alessandro",
         descrizione: "Fornitura materiale Fotocellula ad incasso",
         importo: "126,50",
+        contestata: false,
     },
     {
         data: "01/10/2024",
         intestatario: "FDR Automazioni di Riffaldi Fausto & C S.N.C.",
         descrizione: "Ibtervento per sistemazione porta trovata bloccata in apertura e rumorosa ",
         importo: "63,60",
+        contestata: true,
     },
     {
         data: "9/12/2024",
         intestatario: "Cappelletti servizi ambientali S.R.L.",
         descrizione: "intervento su chiamata per spurgo e lavaggio con pulizia tubazioni di scarico di n. 1 fosse biologiche + n. 1 vasca settica + n. 3 pozzetti + rete cucine + sifone principale con discarica e smaltimento",
         importo: "638,00",
+        contestata: false,
     },
     {
         data: "18/11/2024",
         intestatario: "LCS SOLUTIONS S.R.L..",
         descrizione: "Messa in sicurezza Locale pattumiera,e corridoi scita corsello box",
         importo: "533,06",
+        contestata: false,
     },
     {
         data: "09/01/2025",
         intestatario: "FERRO CREA  S.N.C. di Limongi Giovanni & c..",
         descrizione: "Intervento per regolazione + spessoramento portone ingresso + regoazione pompa ingresso pedonale",
         importo: "99,00",
+        contestata: false,
     },
     {
         data: "27/01/2025",
         intestatario: "REA ELETTRICA Di Crippa Riccardo & Simoni Andrea",
         descrizione: "Sostituzione di 1 pulsante per cancello pedonale, 14-01-25 sost. tubo led scala 1° piano + lampeggiante cancello carraio, 15-01-25 sost. di n. 1 crepuscolare e un rele', 23-01-25 sost. temporizzatore luci scale, 1 lampadina + zona cantinae",
         importo: "671,84",
+        contestata: true,
     },
     {
         data: "14/03/2025",
         intestatario: "REA ELETTRICA Di Crippa Riccardo & Simoni Andrea",
         descrizione: "Intervento per sostituzione modulo display pulsantiera videocitofonica",
         importo: "659,00",
+        contestata: false,
     },
     {
         data: "",
         intestatario: "",
         descrizione: "Totale",
         importo: "",
+        contestata: false,
     },
 ];
 var TotaleGlobale = 0;
@@ -241,36 +278,42 @@ var fattureManutenzione = [
         intestatario: "SI.AN. LOMBARDIA S.R.L.",
         descrizione: "Manutenzione semestrale novembre 2024:11 estintori kg6 - 1 estintore kg2 - porta tagliafuoco - tenuta registri attrezzature",
         importo: "151,25",
+        contestata: false,
     },
     {
         data: "27/12/2024",
         intestatario: "A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Novembre 2024",
         importo: "169,80",
+        contestata: false,
     },
     {
         data: "31/12/2024",
         intestatario: "A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Dicembre 2024",
         importo: "169,80",
+        contestata: false,
     },
     {
         data: "28/02/2025",
         intestatario: "A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Febbraio 2025",
         importo: "169,80",
+        contestata: false,
     },
     {
         data: "31/01/2025",
         intestatario: "A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Gennaio 2025",
         importo: "172,80",
+        contestata: false,
     },
     {
         data: "",
         intestatario: "",
         descrizione: "Totale",
         importo: "",
+        contestata: false,
     },
 ];
 var fattureCertificazioni = [
@@ -279,24 +322,28 @@ var fattureCertificazioni = [
         intestatario: "ICT GENESIA S.R.L.",
         descrizione: "Verifica periodica impianto messa a terra + fornitura di targa regolamentare",
         importo: "303,78",
+        contestata: false,
     },
     {
         data: "30/01/2025",
         intestatario: "G.D. AMBIENTE E SICUREZZA S.R.L.",
         descrizione: "D.P.L. rif Accordo Stato Regioni controllo prevenzione legionellosi",
         importo: "463,60",
+        contestata: false,
     },
     {
         data: "14/03/2025",
         intestatario: "DALLA GIOVANNA GROUP S.R.L.",
         descrizione: "Verifica necessità prevenzione fulminazioni",
         importo: "305,00",
+        contestata: false,
     },
     {
         data: "",
         intestatario: "",
         descrizione: "Totale",
         importo: "",
+        contestata: false,
     },
 ];
 var totaleFatture = [
@@ -305,6 +352,7 @@ var totaleFatture = [
         intestatario: "",
         descrizione: "Totale",
         importo: "",
+        contestata: false,
     },
 ];
 /*const lavori: Lavoro[] = [
@@ -430,18 +478,30 @@ function popolaTabella(Tabella, fatture) {
     var tbody = document.querySelector("#" + Tabella + " tbody");
     var totale = 0;
     var iIndex = 0;
+    var Colore = "black";
     fatture.forEach(function (fattura) {
         iIndex++;
+        if (fattura.contestata) {
+            Colore = "red";
+        }
+        else {
+            Colore = "black";
+        }
         var riga = document.createElement("tr");
         var cellaData = document.createElement("td");
         cellaData.textContent = fattura.data;
+        cellaData.style.color = Colore;
         var cellaIntestatario = document.createElement("td");
         cellaIntestatario.textContent = fattura.intestatario;
+        cellaIntestatario.style.color = Colore;
+        cellaIntestatario.style.color = Colore;
         var cellaDescrizione = document.createElement("td");
         cellaDescrizione.textContent = fattura.descrizione;
+        cellaDescrizione.style.color = Colore;
         var cellaImporto = document.createElement("td");
         cellaImporto.style.textAlign = "right";
         cellaImporto.textContent = fattura.importo;
+        cellaImporto.style.color = Colore;
         if (iIndex < fatture.length) {
             var Importo = cellaImporto.textContent.replace(/\./g, "");
             Importo = Importo.replace(/\,/g, ".");
