@@ -39,13 +39,13 @@ const fattureAmministrazione: Fattura[] = [
         data:"12/11/2024",
         intestatario:"Studio Berti S.A.S. di Berti Luca & C",
         descrizione: "Acconto compenso gestione ordinaria 2024/25",
-        importo:"488,01" ,
+        importo:"488,00" ,
     },
     { 
         data:"31/01/2025",
         intestatario:"Studio Berti S.A.S. di Berti Luca & C",
         descrizione: "Adempimenti fiscali gestione 2024/25",
-        importo:"427,22" ,
+        importo:"427,00" ,
     },
     { 
         data:"31/01/2025",
@@ -128,32 +128,14 @@ const fattureRiscaldamento: Fattura[] = [
         importo:"2800,95" ,
     },  
    
-   { 
-        data:"27/12/2024",
-        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
-        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Novembre 2024",
-        importo:"169,80" ,
-    },  
-    { 
-        data:"31/12/2024",
-        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
-        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Dicembre 2024",
-        importo:"169,80" ,
-    },  
+ 
     { 
         data:"31/12/2024",
         intestatario:"A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "teleriscaldamento dal 1/12/2024 al 31/12/2024",
         importo:"3995,97",
     },  
-    { 
-        data:"31/01/2025",
-        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
-        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Gennaio 2025",
-        importo:"172,80" ,
-    },  
-
-
+ 
    { 
         data:"31/01/2025",
         intestatario:"A CINQUE TECNOLOGIA S.P.A.",
@@ -161,15 +143,7 @@ const fattureRiscaldamento: Fattura[] = [
         importo:"4278,53" ,
     },  
 
- { 
-        data:"28/02/2025",
-        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
-        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Febbraio 2025",
-        importo:"169,80",
-    },  
-
-
-   { 
+    { 
         data:"",
         intestatario:"",
         descrizione: "Totale",
@@ -238,8 +212,186 @@ const fattureAcqua: Fattura[] = [
    
 ];
 
+const fattureSpeseLegali: Fattura[] = [
+   { 
+        data:"23/10/2024",
+        intestatario:"DOTT. Lorenzo Mauri",
+        descrizione: "Verifica ipotecaria catastale/storica C/O Agenzia entrate box sub 103",
+        importo:"210,00" ,
+    },
+   
+  { 
+        data:"23/10/2024",
+        intestatario:"DOTT. Lorenzo Mauri",
+        descrizione: "Verifica ipotecaria catastale/storica C/O Agenzia entrate box sub 103",
+        importo:"522,00" ,
+    },
 
-const lavori: Lavoro[] = [
+    { 
+        data:"12/03/2025",
+        intestatario:"Avvocato Laura Dameno",
+        descrizione: "Assistenza stragiudiziale ricerca e parere box sub 103",
+        importo:"779,56" ,
+    },
+
+   { 
+        data:"",
+        intestatario:"",
+        descrizione: "Totale",
+        importo:"" ,
+    },
+   
+];
+
+const fattureSpeseStraordinarie: Fattura[] = [
+   { 
+        data:"01/10/2024",
+        intestatario:"Electric Service di Crippa Alessandro",
+        descrizione: "Fornitura materiale Fotocellula ad incasso",
+        importo:"126,50" ,
+    },
+   
+  { 
+        data:"01/10/2024",
+        intestatario:"FDR Automazioni di Riffaldi Fausto & C S.N.C.",
+        descrizione: "Ibtervento per sistemazione porta trovata bloccata in apertura e rumorosa ",
+        importo:"63,60" ,
+    },
+
+    { 
+        data:"9/12/2024",
+         intestatario:"Cappelletti servizi ambientali S.R.L.",
+        descrizione: "intervento su chiamata per spurgo e lavaggio con pulizia tubazioni di scarico di n. 1 fosse biologiche + n. 1 vasca settica + n. 3 pozzetti + rete cucine + sifone principale con discarica e smaltimento",
+        importo:"638,00" ,
+    },
+
+  { 
+        data:"18/11/2024",
+        intestatario:"LCS SOLUTIONS S.R.L..",
+        descrizione: "Messa in sicurezza Locale pattumiera,e corridoi scita corsello box",
+        importo:"533,06" ,
+    },
+
+{ 
+        data:"09/01/2025",
+        intestatario:"FERRO CREA  S.N.C. di Limongi Giovanni & c..",
+        descrizione:"Intervento per regolazione + spessoramento portone ingresso + regoazione pompa ingresso pedonale",
+        importo:"99,00" ,
+    },
+
+    { 
+        data:"27/01/2025",
+        intestatario:"REA ELETTRICA Di Crippa Riccardo & Simoni Andrea",
+        descrizione:"Sostituzione di 1 pulsante per cancello pedonale, 14-01-25 sost. tubo led scala 1° piano + lampeggiante cancello carraio, 15-01-25 sost. di n. 1 crepuscolare e un rele', 23-01-25 sost. temporizzatore luci scale, 1 lampadina + zona cantinae",
+        importo:"671,84" ,
+    },
+
+   { 
+        data:"14/03/2025",
+        intestatario:"REA ELETTRICA Di Crippa Riccardo & Simoni Andrea",
+        descrizione:"Intervento per sostituzione modulo display pulsantiera videocitofonica",
+        importo:"659,00" ,
+    },
+
+   { 
+        data:"",
+        intestatario:"",
+        descrizione: "Totale",
+        importo:"" ,
+    },
+   
+];
+
+let TotaleGlobale:number=0
+
+
+const fattureManutenzione:Fattura[]=[
+   { 
+        data:"29/11/2024",
+        intestatario:"SI.AN. LOMBARDIA S.R.L.",
+        descrizione: "Manutenzione semestrale novembre 2024:11 estintori kg6 - 1 estintore kg2 - porta tagliafuoco - tenuta registri attrezzature",
+        importo:"151,25" ,
+    },  
+
+
+   { 
+        data:"27/12/2024",
+        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
+        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Novembre 2024",
+        importo:"169,80" ,
+    },  
+    { 
+        data:"31/12/2024",
+        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
+        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Dicembre 2024",
+        importo:"169,80" ,
+    },  
+    { 
+        data:"28/02/2025",
+        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
+        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Febbraio 2025",
+        importo:"169,80",
+    },  
+   { 
+        data:"31/01/2025",
+        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
+        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Gennaio 2025",
+        importo:"172,80" ,
+    },  
+
+
+    { 
+        data:"",
+        intestatario:"",
+        descrizione: "Totale",
+        importo:"" ,
+    },
+
+];
+
+const fattureCertificazioni:Fattura[]=[
+   { 
+        data:"27/12/2024",
+        intestatario:"ICT GENESIA S.R.L.",
+        descrizione: "Verifica periodica impianto messa a terra + fornitura di targa regolamentare",
+        importo:"303,78" ,
+    },  
+
+
+   { 
+        data:"30/01/2025",
+        intestatario:"G.D. AMBIENTE E SICUREZZA S.R.L.",
+        descrizione: "D.P.L. rif Accordo Stato Regioni controllo prevenzione legionellosi",
+        importo:"463,60" ,
+    },  
+    { 
+        data:"14/03/2025",
+        intestatario:"DALLA GIOVANNA GROUP S.R.L.",
+        descrizione: "Verifica necessità prevenzione fulminazioni",
+        importo:"305,00" ,
+    },  
+    
+
+    { 
+        data:"",
+        intestatario:"",
+        descrizione: "Totale",
+        importo:"" ,
+    },
+
+];
+
+const totaleFatture:Fattura[]=[
+    { 
+        data:"",
+        intestatario:"",
+        descrizione: "Totale",
+        importo:"" ,
+    },
+];
+
+
+/*const lavori: Lavoro[] = [
     { 
         descrizione: "Infiltrazioni terrazzo", 
         stato: "Approvato", 
@@ -357,7 +509,7 @@ const certificazioni: Certificazione[] = [
         visite: "----" 
     },
 
-];
+];*/
 
 function popolaTabella(Tabella:string,fatture:Fattura[]){
 let tbody = document.querySelector("#"+Tabella+" tbody")!;
@@ -377,6 +529,7 @@ let tbody = document.querySelector("#"+Tabella+" tbody")!;
          cellaDescrizione.textContent = fattura.descrizione;
     
          const cellaImporto = document.createElement("td");
+         cellaImporto.style.textAlign="right"; 
          cellaImporto.textContent = fattura.importo;
          if(iIndex<fatture.length){
             let Importo:string=cellaImporto.textContent.replace(/\./g,"")
@@ -384,9 +537,13 @@ let tbody = document.querySelector("#"+Tabella+" tbody")!;
             const Value:number=Number(Importo)
             totale=totale+Value
          }else {
-            cellaImporto.textContent=(totale).toString()
+            cellaDescrizione.style.textAlign="right"; 
+            TotaleGlobale=TotaleGlobale+totale
+            cellaImporto.textContent=(totale).toFixed(2)
             cellaImporto.textContent=cellaImporto.textContent.replace(/\./g,",")
-            
+            if(cellaImporto.textContent.indexOf(",")===-1){
+               cellaImporto.textContent=cellaImporto.textContent+",00"
+            }
          }
 
         riga.appendChild(cellaData);
@@ -405,10 +562,32 @@ function popolaTabelle(): void {
     popolaTabella("tabellaRiscaldamento",fattureRiscaldamento)   
     popolaTabella("tabellaEnergiaElettrica",fattureEnergiaElettrica)   
     popolaTabella("tabellaAcqua",fattureAcqua)   
+    popolaTabella("tabellaSpeseLegali",fattureSpeseLegali)  
+    popolaTabella("tabellaManutenzioni",fattureManutenzione)  
+    popolaTabella("tabellaCertificazioni",fattureCertificazioni)  
+    popolaTabella("tabellaSpeseStraordinarie",fattureSpeseStraordinarie)  
+    let tbody = document.querySelector("#tabellaTotale tbody")!;
+    const riga = document.createElement("tr");
+    const cellaData = document.createElement("td");
+    cellaData.textContent = "23/03/2025";
+    const cellaIntestatario = document.createElement("td");
+    cellaIntestatario.textContent = "Fatture condominio";
+    const cellaDescrizione = document.createElement("td");
+    cellaDescrizione.textContent = "Gestione 2024/2025";
+    const cellaImporto = document.createElement("td");
+    cellaImporto.style.textAlign="right"; 
 
+    cellaImporto.textContent=TotaleGlobale.toFixed(2);
+
+    riga.appendChild(cellaData);
+    riga.appendChild(cellaIntestatario);
+    riga.appendChild(cellaDescrizione);
+    riga.appendChild(cellaImporto);
+
+    tbody.appendChild(riga);
 
   
-    let tbody = document.querySelector("#tabellaLavori tbody")!;
+ /*   let tbody = document.querySelector("#tabellaLavori tbody")!;
     
     lavori.forEach(lavoro => {
         const riga = document.createElement("tr");
@@ -510,7 +689,7 @@ function popolaTabelle(): void {
         riga.appendChild(cellaVisite);
 
         tbody.appendChild(riga);
-    });
+    });*/
 
 
 }
