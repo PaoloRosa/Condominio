@@ -341,7 +341,7 @@ const fattureSpeseStraordinarie: Fattura[] = [
 ];
 
 let TotaleGlobale:number=0
-
+let numeroFatture:number=0;
 
 const fattureManutenzione:Fattura[]=[
    { 
@@ -399,22 +399,28 @@ const fattureCertificazioni:Fattura[]=[
         data:"27/12/2024",
         intestatario:"ICT GENESIA S.R.L.",
         descrizione: "Verifica periodica impianto messa a terra + fornitura di targa regolamentare",
+        importo:"292,80" ,
+        contestata:false,
+    },  
+   { 
+        data:"22/01/2025",
+        intestatario:"ICT GENESIA S.R.L.",
+        descrizione: "Analisi acque in base al decreto legislativo 23 febbraio 2023, n. 18 allegato 1 analisi effettute da laboratorio accreditato da accredia com laboratorio di prova secondo la norma UNI CEI En ISO/IEC 17025",
         importo:"303,78" ,
         contestata:false,
     },  
 
-
    { 
         data:"30/01/2025",
         intestatario:"G.D. AMBIENTE E SICUREZZA S.R.L.",
-        descrizione: "D.P.L. rif Accordo Stato Regioni controllo prevenzione legionellosi",
+        descrizione: "D.P.L. così come previsto ai sensi dell'accordo del 7/05/2015 stato-regioni-provincie autonome sul documento delle linee guida pre la prevenzione e controllo della legionellosi",
         importo:"463,60",
         contestata:false,
     },  
     { 
         data:"14/03/2025",
         intestatario:"DALLA GIOVANNA GROUP S.R.L.",
-        descrizione: "Incarico per verifica della necessità di realizzazione impianto di protezione contro fulminiai sensi della norma CEI EN 62305 1-2-3-4. Sopralluogo analisi impianti valutazione del rischio e misure di protezione + rilascio relazione totale della struttura",
+        descrizione: "Incarico per verifica della necessità di realizzazione impianto di protezione contro fulmini ai sensi della norma CEI EN 62305 1-2-3-4. Sopralluogo analisi impianti valutazione del rischio e misure di protezione + rilascio relazione totale della struttura",
         importo:"305,00" ,
         contestata:false,
     },  
@@ -624,6 +630,7 @@ let tbody = document.querySelector("#"+Tabella+" tbody")!;
          cellaImporto.textContent = fattura.importo;
          cellaImporto.style.color=Colore;
          if(iIndex<fatture.length){
+            numeroFatture++;
             let Importo:string=cellaImporto.textContent.replace(/\./g,"")
             Importo=Importo.replace(/\,/g,".")
             const Value:number=Number(Importo)
@@ -638,6 +645,7 @@ let tbody = document.querySelector("#"+Tabella+" tbody")!;
             }
          }
         cellaImporto.textContent= AddPuntoMigliaia(cellaImporto.textContent)
+        cellaImporto.style.width="8%"; 
         riga.appendChild(cellaData);
         riga.appendChild(cellaIntestatario);
         riga.appendChild(cellaDescrizione);
@@ -663,12 +671,14 @@ function popolaTabelle(): void {
     const cellaData = document.createElement("td");
     cellaData.textContent = "23/03/2025";
     const cellaIntestatario = document.createElement("td");
-    cellaIntestatario.textContent = "Fatture condominio";
+    cellaIntestatario.textContent = "Numero Fatture 2024/25 registrate: "+numeroFatture.toString();
     const cellaDescrizione = document.createElement("td");
-    cellaDescrizione.textContent = "Gestione 2024/2025";
+    cellaDescrizione.textContent = "Totale consuntivo";
+    cellaDescrizione.style.textAlign="right"; 
+    
     const cellaImporto = document.createElement("td");
     cellaImporto.style.textAlign="right"; 
-
+    cellaImporto.style.width="8%"; 
     cellaImporto.textContent=TotaleGlobale.toFixed(2);
     cellaImporto.textContent=cellaImporto.textContent.replace(/\./g,",")
     cellaImporto.textContent= AddPuntoMigliaia(cellaImporto.textContent)
