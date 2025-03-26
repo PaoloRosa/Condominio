@@ -1,62 +1,52 @@
-   <h1>Tab2) Elenco Lavori in Corso</h1>
-        <table id="tabellaLavori">
-            <thead>
-                <tr>
-                    <th>Descrizione</th>
-                    <th>Stato</th>
-                    <th>Data delibera</th>
-                    <th>Fornitore</th>
-                    <th>Cifra preventivata</th>
-                    <th>Inizio lavori</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Le righe verranno aggiunte da TypeScript -->
-            </tbody>
-        </table>
-       <h1>Elenco situazioni da risolvere</h1>
-        <table id="tabellaCoseDaFare">
-            <thead>
-                <tr>
-                    <th>Descrizione</th>
-                    <th>Stato</th>
-                    <th>Note</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Le righe verranno aggiunte da TypeScript -->
-            </tbody>
-        </table>
- <h1>Elenco manutenzioni</h1>
-        <table id="tabellaManutenzioni">
-            <thead>
-                <tr>
-                    <th>Descrizione</th>
-                    <th>Società incaricata</th>
-                    <th>Perioodicità</th>
-                    <th>Visite effettuate</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Le righe verranno aggiunte da TypeScript -->
-            </tbody>
-        </table>
-
-<h1>Elenco certificazioni</h1>
-        <table id="tabellaCertificazioni">
-            <thead>
-                <tr>
-                    <th>Descrizione</th>
-                    <th>Società incaricata</th>
-                    <th>Perioodicità</th>
-                    <th>Visite effettuate</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Le righe verranno aggiunte da TypeScript -->
-            </tbody>
-        </table>
 
 
-    </main>
 
+const fattureAssicurazione: Fattura[] = [
+    { 
+        data:"??/??/2025",
+        intestatario:"ZECCA GRIGNANI S.R.L. - Ag. REALE MUTUA", 
+        descrizione: "Polizza globale fabbricati dal 30/12/2024 al 30/06/2025",
+        importo:"0,00" ,
+        contestata:false,
+    },
+
+    { 
+        data:"??/??/2025",
+        intestatario:"ZECCA GRIGNANI S.R.L. - Ag. REALE MUTUA", 
+        descrizione: "Polizza globale fabbricati dal 01/07/2025 al 31/12/2025",
+        importo:"0,00" ,
+        contestata:false,
+    },
+
+   { 
+        data:"",
+        intestatario:"",
+        descrizione: "Totale",
+        importo:"" ,
+        contestata:false,
+    },
+   
+];
+
+const previsioniAssicurazione: Previsione[] = [
+    { 
+        data:"??/??/2025",
+        intestatario:"ZECCA GRIGNANI S.R.L. - Ag. REALE MUTUA", 
+        descrizione: "Polizza globale fabbricati dal 30/12/2024 al 30/06/2025",
+        importo:"1519,61",
+    },
+
+    { 
+        data:"??/??/2025",
+        intestatario:"ZECCA GRIGNANI S.R.L. - Ag. REALE MUTUA", 
+        descrizione: "Polizza globale fabbricati dal 01/07/2025 al 31/12/2025",
+        importo:"1519,61",
+    },
+
+   { 
+        data:"",
+        intestatario:"",
+        descrizione: "Totale",
+        importo:"" ,
+    },
+];

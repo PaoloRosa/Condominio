@@ -1,3 +1,8 @@
+var TotaleGlobale = 0;
+var numeroFatture = 0;
+var TotaleGlobalePrevisione = 0;
+var PreventivoApprovato = 53761.00;
+var oggi = new Date();
 var fattureAmministrazione = [
     {
         data: "12/11/2024",
@@ -26,6 +31,32 @@ var fattureAmministrazione = [
         descrizione: "Totale",
         importo: "",
         contestata: false,
+    },
+];
+var previsioniAmministrazione = [
+    {
+        data: "? 2025",
+        intestatario: "Studio Berti S.A.S. di Berti Luca & C",
+        descrizione: "Saldo compenso gestione ordinaria 2024/25",
+        importo: "1708,00",
+    },
+    {
+        data: "? 2025",
+        intestatario: "Studio Berti S.A.S. di Berti Luca & C",
+        descrizione: "Cancelleria",
+        importo: "122,00",
+    },
+    {
+        data: "? 2025",
+        intestatario: "Studio Berti S.A.S. di Berti Luca & C",
+        descrizione: "Applicazione decreto legge 81/08",
+        importo: "366,00",
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
     },
 ];
 var fatturePulizie = [
@@ -72,6 +103,86 @@ var fatturePulizie = [
         contestata: false,
     },
 ];
+var previsioniPulizie = [
+    {
+        data: "31/03/2025",
+        intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
+        descrizione: "Servizio di pulizia mese di Marzo",
+        importo: "610,00",
+    },
+    {
+        data: "30/04/2025",
+        intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
+        descrizione: "Servizio di pulizia mese di Aprile",
+        importo: "610,00",
+    },
+    {
+        data: "31/05/2025",
+        intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
+        descrizione: "Servizio di pulizia mese di Maggio",
+        importo: "610,00",
+    },
+    {
+        data: "30/06/2025",
+        intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
+        descrizione: "Servizio di pulizia mese di Giugno",
+        importo: "610,00",
+    },
+    {
+        data: "31/07/2025",
+        intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
+        descrizione: "Servizio di pulizia mese di Luglio",
+        importo: "610,00",
+    },
+    {
+        data: "31/08/2025",
+        intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
+        descrizione: "Servizio di pulizia mese di Agosto",
+        importo: "610,00",
+    },
+    {
+        data: "30/09/2025",
+        intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
+        descrizione: "Servizio di pulizia mese di Settembre",
+        importo: "610,00",
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
+    },
+];
+var fattureDisinfestazioni = [
+    {
+        data: "??/??/2025",
+        intestatario: "AG Disinfestazione S.a.s.",
+        descrizione: "Disinfestazione 2025",
+        importo: "0,00",
+        contestata: false,
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
+        contestata: false,
+    },
+];
+var previsioniDisinfestazioni = [
+    {
+        data: "??/??/2025",
+        intestatario: "AG Disinfestazione S.a.s.",
+        descrizione: "Disinfestazione 2025",
+        importo: "244,00",
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
+    },
+];
 var fattureRiscaldamento = [
     {
         data: "18/06/2024",
@@ -116,11 +227,38 @@ var fattureRiscaldamento = [
         contestata: false,
     },
     {
+        data: "28/02/2025",
+        intestatario: "A CINQUE TECNOLOGIA S.P.A.",
+        descrizione: "teleriscaldamento dal 1/02/2025 al 28/02/2025",
+        importo: "3508,24",
+        contestata: false,
+    },
+    {
         data: "",
         intestatario: "",
         descrizione: "Totale",
         importo: "",
         contestata: false,
+    },
+];
+var previsioniRiscaldamento = [
+    {
+        data: "31/03/2025",
+        intestatario: "A CINQUE TECNOLOGIA S.P.A.",
+        descrizione: "teleriscaldamento dal 1/03/2025 al 31/03/2025",
+        importo: "2265,00",
+    },
+    {
+        data: "30/04/2025",
+        intestatario: "A CINQUE TECNOLOGIA S.P.A.",
+        descrizione: "teleriscaldamento dal 1/04/2025 al 30/04/2025",
+        importo: "750,00",
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
     },
 ];
 var fattureEnergiaElettrica = [
@@ -156,7 +294,7 @@ var fattureEnergiaElettrica = [
         data: "28/02/2025",
         intestatario: "ESA Energie S.P.A.",
         descrizione: "Fornitura energia elettrica Periodo Febbraio 2025",
-        importo: "0,00",
+        importo: "300,00",
         contestata: false,
     },
     {
@@ -165,6 +303,56 @@ var fattureEnergiaElettrica = [
         descrizione: "Totale",
         importo: "",
         contestata: false,
+    },
+];
+var previsioniEnergiaElettrica = [
+    {
+        data: "31/03/2025",
+        intestatario: "ESA Energie S.P.A.",
+        descrizione: "Fornitura energia elettrica Periodo Marzo 2025",
+        importo: "302,00",
+    },
+    {
+        data: "30/04/2025",
+        intestatario: "ESA Energie S.P.A.",
+        descrizione: "Fornitura energia elettrica Periodo Aprile 2025",
+        importo: "262,00",
+    },
+    {
+        data: "31/05/2025",
+        intestatario: "ESA Energie S.P.A.",
+        descrizione: "Fornitura energia elettrica Periodo Maggio 2025",
+        importo: "273,00",
+    },
+    {
+        data: "30/06/2025",
+        intestatario: "ESA Energie S.P.A.",
+        descrizione: "Fornitura energia elettrica Periodo Giugno 2025",
+        importo: "245,00",
+    },
+    {
+        data: "31/07/2025",
+        intestatario: "ESA Energie S.P.A.",
+        descrizione: "Fornitura energia elettrica Periodo Luglio 2025",
+        importo: "271,00",
+    },
+    {
+        data: "31/08/2025",
+        intestatario: "ESA Energie S.P.A.",
+        descrizione: "Fornitura energia elettrica Periodo Agosto 2025",
+        importo: "267,00",
+    },
+    {
+        data: "30/09/2025",
+        intestatario: "ESA Energie S.P.A.",
+        descrizione: "Fornitura energia elettrica Periodo Settembre 2025",
+        importo: "307,00",
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
     },
 ];
 var fattureAcqua = [
@@ -181,6 +369,46 @@ var fattureAcqua = [
         descrizione: "Totale",
         importo: "",
         contestata: false,
+    },
+];
+var previsioniAcqua = [
+    {
+        data: "??/03/2025",
+        intestatario: "BRIANZACQUE S.r.l.",
+        descrizione: "Fornitura acqua potabile 1° periodo 2025",
+        importo: "1200,00"
+    },
+    {
+        data: "??/06/2025",
+        intestatario: "BRIANZACQUE S.r.l.",
+        descrizione: "Fornitura acqua potabile 2° periodo 2025",
+        importo: "1200,00",
+    },
+    {
+        data: "??/09/2025",
+        intestatario: "BRIANZACQUE S.r.l.",
+        descrizione: "Fornitura acqua potabile 3° periodo 2025",
+        importo: "1200,00",
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
+    },
+];
+var previsioniSpeseLegali = [
+    {
+        data: "??/??/2025",
+        intestatario: "-----------",
+        descrizione: "------------",
+        importo: "0,00"
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
     },
 ];
 var fattureSpeseLegali = [
@@ -271,8 +499,38 @@ var fattureSpeseStraordinarie = [
         contestata: false,
     },
 ];
-var TotaleGlobale = 0;
-var numeroFatture = 0;
+var previsioniSpeseStraordinarie = [
+    {
+        data: "??/??/2025",
+        intestatario: "LCS Solutions",
+        descrizione: "Sistemazione scivolo box",
+        importo: "500,00",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "LCS Solutions",
+        descrizione: "Infiltrazioni terrazzo",
+        importo: "2650,00",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "LCS Solutions",
+        descrizione: "Porta cortile",
+        importo: "698,50",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "LCS Solutions",
+        descrizione: "Gancio ferma porte",
+        importo: "132,00",
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
+    },
+];
 var fattureManutenzione = [
     {
         data: "29/11/2024",
@@ -315,6 +573,100 @@ var fattureManutenzione = [
         descrizione: "Totale",
         importo: "",
         contestata: false,
+    },
+];
+var previsioniCertificazione = [
+    {
+        data: "??/??/2025",
+        intestatario: "SICIT S.R.L.",
+        descrizione: "Verifica periodica impianto ascensore + posa targhetta regolamentare",
+        importo: "176,00",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "????????????",
+        descrizione: "Assistenza all'ingegnere dell'ente verificatore per la verifica periodica dell'impianto.",
+        importo: "99,00",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "Gestirsi R.R.L.",
+        descrizione: "Aggiornamento contratto di riferimento",
+        importo: "68,93",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "ICT GENESIA S.R.L.",
+        descrizione: "verifiche adeguamento alle disposizioni obbligatorie in materia di privacy",
+        importo: "79,30",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "DELLA GIOVANNA GROUP S.R.L.",
+        descrizione: "Gestione pratica Curit",
+        importo: "98,82",
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
+    },
+];
+var previsioniManutenzione = [
+    {
+        data: "??/??/2024",
+        intestatario: "SI.AN. LOMBARDIA S.R.L.",
+        descrizione: "Manutenzione semestrale novembre Maggio ",
+        importo: "500,00",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "A CINQUE TECNOLOGIA S.P.A.",
+        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Marzo 2025",
+        importo: "172,75",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "A CINQUE TECNOLOGIA S.P.A.",
+        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Aprile 2025",
+        importo: "169,80",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "A CINQUE TECNOLOGIA S.P.A.",
+        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Maggio 2025",
+        importo: "549,80",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "Del Bo",
+        descrizione: "Canone semestrale Servoscala",
+        importo: "141,47",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "Del Bo",
+        descrizione: "Canone semestrale Servoscala",
+        importo: "141,47",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "Lombarda Ascensori",
+        descrizione: "Canone semestrale Ascensore",
+        importo: "318,30",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "Lombarda Ascensori",
+        descrizione: "Canone semestrale Ascensore",
+        importo: "318,30",
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
     },
 ];
 var fattureCertificazioni = [
@@ -361,7 +713,41 @@ var fattureCertificazioni = [
         contestata: false,
     },
 ];
-var totaleFatture = [
+var previsioniAssicurazione = [
+    {
+        data: "??/??/2025",
+        intestatario: "ZECCA GRIGNANI S.R.L. - Ag. REALE MUTUA",
+        descrizione: "Polizza globale fabbricati dal 30/12/2024 al 30/06/2025",
+        importo: "1519,61",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "ZECCA GRIGNANI S.R.L. - Ag. REALE MUTUA",
+        descrizione: "Polizza globale fabbricati dal 01/07/2025 al 31/12/2025",
+        importo: "1519,61",
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
+    },
+];
+var fattureAssicurazione = [
+    {
+        data: "??/??/2025",
+        intestatario: "ZECCA GRIGNANI S.R.L. - Ag. REALE MUTUA",
+        descrizione: "Polizza globale fabbricati dal 30/12/2024 al 30/06/2025",
+        importo: "0,00",
+        contestata: false,
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "ZECCA GRIGNANI S.R.L. - Ag. REALE MUTUA",
+        descrizione: "Polizza globale fabbricati dal 01/07/2025 al 31/12/2025",
+        importo: "0,00",
+        contestata: false,
+    },
     {
         data: "",
         intestatario: "",
@@ -370,125 +756,131 @@ var totaleFatture = [
         contestata: false,
     },
 ];
-/*const lavori: Lavoro[] = [
+var previsioniVarie = [
     {
-        descrizione: "Infiltrazioni terrazzo",
-        stato: "Approvato",
-        dataDelibera: "11/07/2024",
-        fornitore: "------",
-        preventivo: "2700 €",
-        inizioLavori: "------"
+        data: "??/??/2025",
+        intestatario: "Comune di Monza",
+        descrizione: "TOSAP Tassa occupazione aree pubbliche",
+        importo: "88,00",
     },
     {
-        descrizione: "Porta cortile",
-        stato: "Approvato",
-        dataDelibera: "27/01/2025",
-        fornitore: "Lcs Solutions",
-        preventivo: "698.50 €",
-        inizioLavori: "-----"
+        data: "??/??/2025",
+        intestatario: "Comune di Monza",
+        descrizione: "IMU saldo 2024",
+        importo: "247,00",
     },
     {
-        descrizione: "Gancio fermaporte cancelletto",
-        stato: "Approvato",
-        dataDelibera: "27/01/2025",
-        fornitore: "Lcs Solutions",
-        preventivo: "132 €",
-        inizioLavori: "----"
+        data: "??/??/2025",
+        intestatario: "Comune di Monza",
+        descrizione: "IMU acconto 2025",
+        importo: "260,00",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "Banca popolare di Milano",
+        descrizione: "Gestione conto corrente bancario",
+        importo: "120,00",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "Parrocchia San Biagio",
+        descrizione: "Affitto sala n°1 assemblea ordinaria n°1 assemblea straordinaria",
+        importo: "240,00",
+    },
+    {
+        data: "??/??/2025",
+        intestatario: "varie",
+        descrizione: "Spese postali",
+        importo: "80,00",
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
     },
 ];
-
-const cosedafare: CosaDaFare[] = [
+var fattureVarie = [
     {
-        descrizione: "Fazzoletti giardino",
-        stato: "??????",
-        note: "----"
+        data: "??/??/2025",
+        intestatario: "Comune di Monza",
+        descrizione: "TOSAP Tassa occupazione aree pubbliche",
+        importo: "0,00",
+        contestata: false,
     },
     {
-        descrizione: "Cartello differenziata",
-        stato: "??????",
-        note: "----"
+        data: "??/??/2025",
+        intestatario: "Comune di Monza",
+        descrizione: "IMU saldo 2024",
+        importo: "0,00",
+        contestata: false,
     },
     {
-        descrizione: "Porta ingresso blocco apertura",
-        stato: "??????",
-        note: "----"
+        data: "??/??/2025",
+        intestatario: "Comune di Monza",
+        descrizione: "IMU acconto 2025",
+        importo: "0,00",
+        contestata: false,
     },
     {
-        descrizione: "Tombino corridoio immondizia",
-        stato: "??????",
-        note: "----"
+        data: "??/??/2025",
+        intestatario: "Banca popolare di Milano",
+        descrizione: "Gestione conto corrente bancario",
+        importo: "0,00",
+        contestata: false,
     },
     {
-        descrizione: "Chiave cavedio",
-        stato: "??????",
-        note: "----"
+        data: "??/??/2025",
+        intestatario: "Parrocchia San Biagio",
+        descrizione: "Affitto sala n°1 assemblea ordinaria n°1 assemblea straordinaria",
+        importo: "0,00",
+        contestata: false,
     },
-
+    {
+        data: "??/??/2025",
+        intestatario: "varie",
+        descrizione: "Spese postali",
+        importo: "0,00",
+        contestata: false,
+    },
+    {
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
+        contestata: false,
+    },
 ];
-
-const manutenzioni: Manutenzione[] = [
+var previsioniGiardino = [
     {
-        descrizione: "Ascensore",
-        societa:"Lombarda ascensori" ,
-        periodo: "??????",
-        visite: "----"
-    },
-    {
-        descrizione: "Servoscala",
-        societa:"Lombarda ascensori",
-        periodo: "??????",
-        visite: "----"
+        data: "??/??/2025",
+        intestatario: "Colombo Mirko",
+        descrizione: "N 4 tagli giardino + 4 bolli 2 euro",
+        importo: "648,00",
     },
     {
-        descrizione: "Spurghi",
-        societa:"",
-        periodo: "??????",
-        visite: "----"
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
     },
-    {
-        descrizione: "AntiIncendio",
-        societa:"",
-        periodo: "??????",
-        visite: "----"
-    },
-
-   {
-        descrizione: "Disinfestazione",
-        societa:"",
-        periodo: "??????",
-        visite: "----"
-    },
-
 ];
-
-
-const certificazioni: Certificazione[] = [
+var fattureGiardino = [
     {
-        descrizione: "Cancello carraio",
-        societa:"" ,
-        periodo: "??????",
-        visite: "----"
+        data: "??/??/2025",
+        intestatario: "Colombo Mirko",
+        descrizione: "N 4 tagli giardino + 4 bolli 2 euro",
+        importo: "0,00",
+        contestata: false
     },
     {
-        descrizione: "Messa a terra",
-        societa:"",
-        periodo: "??????",
-        visite: "----"
+        data: "",
+        intestatario: "",
+        descrizione: "Totale",
+        importo: "",
+        contestata: false
     },
-    {
-        descrizione: "Qualità acqua",
-        societa:"",
-        periodo: "??????",
-        visite: "----"
-    },
-    {
-        descrizione: "Privacy",
-        societa:"Genesia",
-        periodo: "??????",
-        visite: "----"
-    },
-
-];*/
+];
 function AddPuntoMigliaia(numero) {
     // Converto la stringa in numero per il controllo
     var valoreNumerico = parseFloat(numero.replace(',', '.'));
@@ -505,7 +897,52 @@ function AddPuntoMigliaia(numero) {
     // Ricostruire il numero formattato
     return parteDecimale.length > 0 ? parteIntera + ',' + parteDecimale : parteIntera;
 }
-function popolaTabella(Tabella, fatture) {
+function popolaPrevisione(Tabella, previsioni) {
+    var tbody = document.querySelector("#" + Tabella + " tbody");
+    var totalePrevisione = 0;
+    var iIndex = 0;
+    var Colore = "blue";
+    previsioni.forEach(function (previsione) {
+        iIndex++;
+        var riga = document.createElement("tr");
+        var cellaData = document.createElement("td");
+        cellaData.textContent = previsione.data;
+        cellaData.style.color = Colore;
+        var cellaIntestatario = document.createElement("td");
+        cellaIntestatario.textContent = previsione.intestatario;
+        cellaIntestatario.style.color = Colore;
+        var cellaDescrizione = document.createElement("td");
+        cellaDescrizione.textContent = previsione.descrizione;
+        cellaDescrizione.style.color = Colore;
+        var cellaImporto = document.createElement("td");
+        cellaImporto.style.textAlign = "right";
+        cellaImporto.textContent = previsione.importo;
+        cellaImporto.style.color = Colore;
+        if (iIndex < previsioni.length) {
+            var Importo = cellaImporto.textContent.replace(/\./g, "");
+            Importo = Importo.replace(/\,/g, ".");
+            var Value = Number(Importo);
+            totalePrevisione = totalePrevisione + Value;
+        }
+        else {
+            cellaDescrizione.style.textAlign = "right";
+            TotaleGlobalePrevisione = TotaleGlobalePrevisione + totalePrevisione;
+            cellaImporto.textContent = (totalePrevisione).toFixed(2);
+            cellaImporto.textContent = cellaImporto.textContent.replace(/\./g, ",");
+            if (cellaImporto.textContent.indexOf(",") === -1) {
+                cellaImporto.textContent = cellaImporto.textContent + ",00";
+            }
+        }
+        cellaImporto.textContent = AddPuntoMigliaia(cellaImporto.textContent);
+        cellaImporto.style.width = "8%";
+        riga.appendChild(cellaData);
+        riga.appendChild(cellaIntestatario);
+        riga.appendChild(cellaDescrizione);
+        riga.appendChild(cellaImporto);
+        tbody.appendChild(riga);
+    });
+}
+function popolaConsuntivo(Tabella, fatture) {
     var tbody = document.querySelector("#" + Tabella + " tbody");
     var totale = 0;
     var iIndex = 0;
@@ -534,10 +971,12 @@ function popolaTabella(Tabella, fatture) {
         cellaImporto.textContent = fattura.importo;
         cellaImporto.style.color = Colore;
         if (iIndex < fatture.length) {
-            numeroFatture++;
             var Importo = cellaImporto.textContent.replace(/\./g, "");
             Importo = Importo.replace(/\,/g, ".");
             var Value = Number(Importo);
+            if (Value > 0) {
+                numeroFatture++;
+            }
             totale = totale + Value;
         }
         else {
@@ -558,28 +997,184 @@ function popolaTabella(Tabella, fatture) {
         tbody.appendChild(riga);
     });
 }
-function popolaTabelle() {
-    popolaTabella("tabellaAmministrazione", fattureAmministrazione);
-    popolaTabella("tabellaPulizie", fatturePulizie);
-    popolaTabella("tabellaRiscaldamento", fattureRiscaldamento);
-    popolaTabella("tabellaEnergiaElettrica", fattureEnergiaElettrica);
-    popolaTabella("tabellaAcqua", fattureAcqua);
-    popolaTabella("tabellaSpeseLegali", fattureSpeseLegali);
-    popolaTabella("tabellaManutenzioni", fattureManutenzione);
-    popolaTabella("tabellaCertificazioni", fattureCertificazioni);
-    popolaTabella("tabellaSpeseStraordinarie", fattureSpeseStraordinarie);
-    var tbody = document.querySelector("#tabellaTotale tbody");
+function Preventivo() {
+    // Tabella previsioni
+    popolaPrevisione("tabellaPrevisioneAmministrazione", previsioniAmministrazione);
+    popolaPrevisione("tabellaPrevisionePulizie", previsioniPulizie);
+    popolaPrevisione("tabellaPrevisioneAssicurazione", previsioniAssicurazione);
+    popolaPrevisione("tabellaPrevisioneRiscaldamento", previsioniRiscaldamento);
+    popolaPrevisione("tabellaPrevisioneEnergiaElettrica", previsioniEnergiaElettrica);
+    popolaPrevisione("tabellaPrevisioneAcqua", previsioniAcqua);
+    popolaPrevisione("tabellaPrevisioneSpeseLegali", previsioniSpeseLegali);
+    popolaPrevisione("tabellaPrevisioneSpeseStrordinarie", previsioniSpeseStraordinarie);
+    popolaPrevisione("tabellaPrevisioneManutenzioni", previsioniManutenzione);
+    popolaPrevisione("tabellaPrevisioneCertificazioni", previsioniCertificazione);
+    popolaPrevisione("tabellaPrevisioniDisinfestazioni", previsioniDisinfestazioni);
+    popolaPrevisione("tabellaPrevisioniGiardino", previsioniGiardino);
+    popolaPrevisione("tabellaPrevisioniVarie", previsioniVarie);
+    // Totale Previsione
+    var tbody = document.querySelector("#tabellaTotalePrevisione tbody");
     var riga = document.createElement("tr");
     var cellaData = document.createElement("td");
-    cellaData.textContent = "23/03/2025";
+    cellaData.style.fontWeight = "bold";
+    cellaData.style.fontSize = "20px";
+    cellaData.style.color = "blue";
+    cellaData.textContent = oggi.toLocaleDateString();
     var cellaIntestatario = document.createElement("td");
-    cellaIntestatario.textContent = "Numero Fatture 2024/25 registrate: " + numeroFatture.toString();
+    cellaIntestatario.style.fontWeight = "bold";
+    cellaIntestatario.style.fontSize = "20px";
+    cellaIntestatario.textContent = " ";
     var cellaDescrizione = document.createElement("td");
-    cellaDescrizione.textContent = "Totale consuntivo";
+    cellaDescrizione.textContent = "Totale fatture preventivate";
     cellaDescrizione.style.textAlign = "right";
+    cellaDescrizione.style.fontWeight = "bold";
+    cellaDescrizione.style.fontSize = "20px";
+    cellaDescrizione.style.color = "blue";
     var cellaImporto = document.createElement("td");
     cellaImporto.style.textAlign = "right";
     cellaImporto.style.width = "8%";
+    cellaImporto.style.fontWeight = "bold";
+    cellaImporto.style.fontSize = "20px";
+    cellaImporto.style.color = "blue";
+    cellaImporto.textContent = TotaleGlobalePrevisione.toFixed(2);
+    cellaImporto.textContent = cellaImporto.textContent.replace(/\./g, ",");
+    cellaImporto.textContent = AddPuntoMigliaia(cellaImporto.textContent);
+    riga.appendChild(cellaData);
+    riga.appendChild(cellaIntestatario);
+    riga.appendChild(cellaDescrizione);
+    riga.appendChild(cellaImporto);
+    tbody.appendChild(riga);
+    riga = document.createElement("tr");
+    cellaData = document.createElement("td");
+    cellaData.style.fontWeight = "bold";
+    cellaData.style.fontSize = "20px";
+    cellaData.style.color = "green";
+    cellaData.textContent = oggi.toLocaleDateString();
+    cellaIntestatario = document.createElement("td");
+    cellaIntestatario.style.fontWeight = "bold";
+    cellaIntestatario.style.fontSize = "20px";
+    cellaIntestatario.textContent = "";
+    cellaDescrizione = document.createElement("td");
+    cellaDescrizione.textContent = "Totale fatture a consuntivo + fatture preventivate";
+    cellaDescrizione.style.textAlign = "right";
+    cellaDescrizione.style.fontWeight = "bold";
+    cellaDescrizione.style.fontSize = "20px";
+    cellaDescrizione.style.color = "green";
+    cellaImporto = document.createElement("td");
+    cellaImporto.style.textAlign = "right";
+    cellaImporto.style.width = "8%";
+    cellaImporto.style.fontWeight = "bold";
+    cellaImporto.style.fontSize = "20px";
+    cellaImporto.style.color = "green";
+    cellaImporto.textContent = (TotaleGlobale + TotaleGlobalePrevisione).toFixed(2);
+    cellaImporto.textContent = cellaImporto.textContent.replace(/\./g, ",");
+    cellaImporto.textContent = AddPuntoMigliaia(cellaImporto.textContent);
+    riga.appendChild(cellaData);
+    riga.appendChild(cellaIntestatario);
+    riga.appendChild(cellaDescrizione);
+    riga.appendChild(cellaImporto);
+    tbody.appendChild(riga);
+    tbody.appendChild(riga);
+    riga = document.createElement("tr");
+    cellaData = document.createElement("td");
+    cellaData.style.fontWeight = "bold";
+    cellaData.style.fontSize = "20px";
+    cellaData.style.color = "black";
+    cellaData.textContent = "";
+    cellaIntestatario = document.createElement("td");
+    cellaIntestatario.style.fontWeight = "bold";
+    cellaIntestatario.style.fontSize = "20px";
+    cellaIntestatario.textContent = "";
+    cellaDescrizione = document.createElement("td");
+    cellaDescrizione.textContent = "Preventivo approvato";
+    cellaDescrizione.style.textAlign = "right";
+    cellaDescrizione.style.fontWeight = "bold";
+    cellaDescrizione.style.fontSize = "20px";
+    cellaDescrizione.style.color = "black";
+    cellaImporto = document.createElement("td");
+    cellaImporto.style.textAlign = "right";
+    cellaImporto.style.width = "8%";
+    cellaImporto.style.fontWeight = "bold";
+    cellaImporto.style.fontSize = "20px";
+    cellaImporto.style.color = "black";
+    cellaImporto.textContent = (PreventivoApprovato).toFixed(2);
+    cellaImporto.textContent = cellaImporto.textContent.replace(/\./g, ",");
+    cellaImporto.textContent = AddPuntoMigliaia(cellaImporto.textContent);
+    riga.appendChild(cellaData);
+    riga.appendChild(cellaIntestatario);
+    riga.appendChild(cellaDescrizione);
+    riga.appendChild(cellaImporto);
+    tbody.appendChild(riga);
+    riga = document.createElement("tr");
+    cellaData = document.createElement("td");
+    cellaData.style.fontWeight = "bold";
+    cellaData.style.fontSize = "20px";
+    cellaData.style.color = "black";
+    cellaData.textContent = "";
+    cellaIntestatario = document.createElement("td");
+    cellaIntestatario.style.fontWeight = "bold";
+    cellaIntestatario.style.fontSize = "20px";
+    cellaIntestatario.textContent = "";
+    cellaDescrizione = document.createElement("td");
+    cellaDescrizione.textContent = "Delta";
+    cellaDescrizione.style.textAlign = "right";
+    cellaDescrizione.style.fontWeight = "bold";
+    cellaDescrizione.style.fontSize = "20px";
+    cellaDescrizione.style.color = "black";
+    cellaImporto = document.createElement("td");
+    cellaImporto.style.textAlign = "right";
+    cellaImporto.style.width = "8%";
+    cellaImporto.style.fontWeight = "bold";
+    cellaImporto.style.fontSize = "20px";
+    var Delta = PreventivoApprovato - TotaleGlobale - TotaleGlobalePrevisione;
+    cellaImporto.style.color = "green";
+    if (Delta < 0) {
+        cellaImporto.style.color = "red";
+    }
+    cellaImporto.textContent = (Delta).toFixed(2);
+    cellaImporto.textContent = cellaImporto.textContent.replace(/\./g, ",");
+    cellaImporto.textContent = AddPuntoMigliaia(cellaImporto.textContent);
+    riga.appendChild(cellaData);
+    riga.appendChild(cellaIntestatario);
+    riga.appendChild(cellaDescrizione);
+    riga.appendChild(cellaImporto);
+    tbody.appendChild(riga);
+}
+function Consuntivo() {
+    popolaConsuntivo("tabellaAmministrazione", fattureAmministrazione);
+    popolaConsuntivo("tabellaPulizie", fatturePulizie);
+    popolaConsuntivo("tabellaFattureAssicurazione", fattureAssicurazione);
+    popolaConsuntivo("tabellaRiscaldamento", fattureRiscaldamento);
+    popolaConsuntivo("tabellaEnergiaElettrica", fattureEnergiaElettrica);
+    popolaConsuntivo("tabellaAcqua", fattureAcqua);
+    popolaConsuntivo("tabellaSpeseLegali", fattureSpeseLegali);
+    popolaConsuntivo("tabellaManutenzioni", fattureManutenzione);
+    popolaConsuntivo("tabellaCertificazioni", fattureCertificazioni);
+    popolaConsuntivo("tabellaSpeseStraordinarie", fattureSpeseStraordinarie);
+    popolaConsuntivo("tabellaFattureDisinfestazioni", fattureDisinfestazioni);
+    popolaConsuntivo("tabellaFattureVarie", fattureVarie);
+    popolaConsuntivo("tabellaFattureGiardino", fattureGiardino);
+    // Totale fatture
+    var tbody = document.querySelector("#tabellaTotale tbody");
+    var riga = document.createElement("tr");
+    var cellaData = document.createElement("td");
+    cellaData.style.fontWeight = "bold";
+    cellaData.style.fontSize = "20px";
+    cellaData.textContent = oggi.toLocaleDateString();
+    var cellaIntestatario = document.createElement("td");
+    cellaIntestatario.style.fontWeight = "bold";
+    cellaIntestatario.style.fontSize = "20px";
+    cellaIntestatario.textContent = "Numero Fatture registrate: " + numeroFatture.toString();
+    var cellaDescrizione = document.createElement("td");
+    cellaDescrizione.textContent = "Totale consuntivo";
+    cellaDescrizione.style.textAlign = "right";
+    cellaDescrizione.style.fontWeight = "bold";
+    cellaDescrizione.style.fontSize = "20px";
+    var cellaImporto = document.createElement("td");
+    cellaImporto.style.textAlign = "right";
+    cellaImporto.style.width = "8%";
+    cellaImporto.style.fontWeight = "bold";
+    cellaImporto.style.fontSize = "20px";
     cellaImporto.textContent = TotaleGlobale.toFixed(2);
     cellaImporto.textContent = cellaImporto.textContent.replace(/\./g, ",");
     cellaImporto.textContent = AddPuntoMigliaia(cellaImporto.textContent);
@@ -588,108 +1183,10 @@ function popolaTabelle() {
     riga.appendChild(cellaDescrizione);
     riga.appendChild(cellaImporto);
     tbody.appendChild(riga);
-    /*   let tbody = document.querySelector("#tabellaLavori tbody")!;
-       
-       lavori.forEach(lavoro => {
-           const riga = document.createElement("tr");
-   
-           const cellaDescrizione = document.createElement("td");
-           cellaDescrizione.textContent = lavoro.descrizione;
-   
-           const cellaStato = document.createElement("td");
-           cellaStato.textContent = lavoro.stato;
-   
-           const cellaData = document.createElement("td");
-           cellaData.textContent = lavoro.dataDelibera;
-   
-           const cellaFornitore = document.createElement("td");
-           cellaFornitore.textContent = lavoro.fornitore;
-   
-           const cellaPreventivo = document.createElement("td");
-           cellaPreventivo.textContent = lavoro.preventivo;
-   
-           const cellaInizio = document.createElement("td");
-           cellaInizio.textContent = lavoro.inizioLavori;
-   
-           riga.appendChild(cellaDescrizione);
-           riga.appendChild(cellaStato);
-           riga.appendChild(cellaData);
-           riga.appendChild(cellaFornitore);
-           riga.appendChild(cellaPreventivo);
-           riga.appendChild(cellaInizio);
-   
-           tbody.appendChild(riga);
-       });
-   
-       tbody = document.querySelector("#tabellaCoseDaFare tbody")!;
-       
-       cosedafare.forEach(cosadafare => {
-           const riga = document.createElement("tr");
-   
-           const cellaDescrizione = document.createElement("td");
-           cellaDescrizione.textContent = cosadafare.descrizione;
-   
-           const cellaStato = document.createElement("td");
-           cellaStato.textContent = cosadafare.stato;
-   
-           const cellaNote = document.createElement("td");
-           cellaNote.textContent = cosadafare.note;
-   
-        
-           riga.appendChild(cellaDescrizione);
-           riga.appendChild(cellaStato);
-           riga.appendChild(cellaNote);
-   
-           tbody.appendChild(riga);
-       });
-      tbody = document.querySelector("#tabellaManutenzioni tbody")!;
-       
-      manutenzioni.forEach(manutenzione => {
-           const riga = document.createElement("tr");
-   
-           const cellaDescrizione = document.createElement("td");
-           cellaDescrizione.textContent = manutenzione.descrizione;
-   
-           const cellaSocieta = document.createElement("td");
-           cellaSocieta.textContent = manutenzione.societa;
-   
-           const cellaPeriodo = document.createElement("td");
-           cellaPeriodo.textContent = manutenzione.periodo;
-   
-           const cellaVisite = document.createElement("td");
-           cellaVisite.textContent = manutenzione.visite;
-   
-           riga.appendChild(cellaDescrizione);
-           riga.appendChild(cellaSocieta);
-           riga.appendChild(cellaPeriodo);
-           riga.appendChild(cellaVisite);
-   
-           tbody.appendChild(riga);
-       });
-   
-    tbody = document.querySelector("#tabellaCertificazioni tbody")!;
-       
-      certificazioni.forEach(certificazione => {
-           const riga = document.createElement("tr");
-   
-           const cellaDescrizione = document.createElement("td");
-           cellaDescrizione.textContent = certificazione.descrizione;
-   
-           const cellaSocieta = document.createElement("td");
-           cellaSocieta.textContent = certificazione.societa;
-   
-           const cellaPeriodo = document.createElement("td");
-           cellaPeriodo.textContent = certificazione.periodo;
-   
-           const cellaVisite = document.createElement("td");
-           cellaVisite.textContent = certificazione.visite;
-   
-           riga.appendChild(cellaDescrizione);
-           riga.appendChild(cellaSocieta);
-           riga.appendChild(cellaPeriodo);
-           riga.appendChild(cellaVisite);
-   
-           tbody.appendChild(riga);
-       });*/
 }
-document.addEventListener("DOMContentLoaded", popolaTabelle);
+function start() {
+    Consuntivo();
+    Preventivo();
+    window.scrollTo(0, 0);
+}
+start();
