@@ -583,6 +583,14 @@ const fattureSpeseStraordinarie: Fattura[] = [
         contestata:false,
     },
 
+{ 
+        data:"09/01/2025",
+        intestatario:"FERRO CREA  S.N.C. di Limongi Giovanni & c..",
+        descrizione:"Sistemazione cilindro con pulizia + lubrificazione",
+        importo:"100,70" ,
+        contestata:false,
+    },
+
    { 
         data:"",
         intestatario:"",
