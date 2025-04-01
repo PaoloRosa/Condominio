@@ -584,7 +584,7 @@ const fattureSpeseStraordinarie: Fattura[] = [
     },
 
 { 
-        data:"09/01/2025",
+        data:"27/03/2025",
         intestatario:"FERRO CREA  S.N.C. di Limongi Giovanni & c..",
         descrizione:"Sistemazione cilindro con pulizia + lubrificazione",
         importo:"100,70" ,
@@ -636,10 +636,6 @@ const previsioniSpeseStraordinarie: Previsione[] = [
 ];
 
 
-
-
-
-
 const fattureManutenzione:Fattura[]=[
    { 
         data:"29/11/2024",
@@ -652,14 +648,14 @@ const fattureManutenzione:Fattura[]=[
 
    { 
         data:"27/12/2024",
-        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
+        intestatario:"A CINQUE INNOVAZIONE S.R.L.",
         descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Novembre 2024",
         importo:"169,80" ,
         contestata:false,
     },  
     { 
         data:"31/12/2024",
-        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
+        intestatario:"A CINQUE INNOVAZIONE S.R.L.",
         descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Dicembre 2024",
         importo:"169,80" ,
         contestata:false,
@@ -667,7 +663,7 @@ const fattureManutenzione:Fattura[]=[
 
    { 
         data:"31/01/2025",
-        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
+        intestatario:"A CINQUE INNOVAZIONE S.R.L.",
         descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Gennaio 2025",
         importo:"172,80" ,
         contestata:false,
@@ -675,11 +671,21 @@ const fattureManutenzione:Fattura[]=[
 
     { 
         data:"28/02/2025",
-        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
+        intestatario:"A CINQUE INNOVAZIONE S.R.L.",
         descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Febbraio 2025",
         importo:"169,80",
         contestata:false,
     },  
+
+ { 
+        data:"31/03/2025",
+        intestatario:"A CINQUE INNOVAZIONE S.R.I.",
+        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Marzo 2025",
+        importo:"172,80",
+        contestata:false,
+    },  
+
+
 
     { 
         data:"",
@@ -688,6 +694,7 @@ const fattureManutenzione:Fattura[]=[
         importo:"" ,
         contestata:false,
     },
+  
 
 ];
 
@@ -745,22 +752,17 @@ const previsioniManutenzione:Previsione[]=[
         descrizione: "Manutenzione semestrale novembre Maggio ",
         importo:"500,00" ,
     },  
-   { 
-        data:"??/??/2025",
-        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
-        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Marzo 2025",
-        importo:"172,75" ,
-    },  
+  
     { 
         data:"??/??/2025",
-        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
+        intestatario:"A CINQUE INNOVAZIONE S.R.L.",
         descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Aprile 2025",
         importo:"169,80" ,
     },  
 
    { 
         data:"??/??/2025",
-        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
+        intestatario:"A CINQUE INNOVAZIONE S.R.L.",
         descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Maggio 2025",
         importo:"549,80" ,
     },  
