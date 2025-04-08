@@ -96,6 +96,13 @@ var fatturePulizie = [
         contestata: false,
     },
     {
+        data: "31/03/2025",
+        intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
+        descrizione: "Servizio di pulizia mese di Marzo",
+        importo: "610,00",
+        contestata: false,
+    },
+    {
         data: "",
         intestatario: "",
         descrizione: "Totale",
@@ -104,12 +111,6 @@ var fatturePulizie = [
     },
 ];
 var previsioniPulizie = [
-    {
-        data: "31/03/2025",
-        intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
-        descrizione: "Servizio di pulizia mese di Marzo",
-        importo: "610,00",
-    },
     {
         data: "30/04/2025",
         intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
