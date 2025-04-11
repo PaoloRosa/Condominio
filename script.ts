@@ -594,6 +594,16 @@ const fattureSpeseStraordinarie: Fattura[] = [
         contestata:false,
     },
 
+{ 
+        data:"02/04/2025",
+        intestatario:"LCS Solutions",
+        descrizione: "Intervento con opere di messa in sicurezza crepe scivolo box",
+        importo:"413,33" ,
+        contestata:false,
+    },
+
+
+
    { 
         data:"",
         intestatario:"",
@@ -605,12 +615,7 @@ const fattureSpeseStraordinarie: Fattura[] = [
 ];
 
 const previsioniSpeseStraordinarie: Previsione[] = [
-   { 
-        data:"??/??/2025",
-        intestatario:"LCS Solutions",
-        descrizione: "Sistemazione scivolo box",
-        importo:"500,00" ,
-    },
+   
    { 
         data:"??/??/2025",
         intestatario:"LCS Solutions",
