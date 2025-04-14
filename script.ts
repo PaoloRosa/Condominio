@@ -429,6 +429,13 @@ const fattureAcqua: Fattura[] = [
         importo:"1220,00" ,
         contestata:false,
     },
+{ 
+        data:"26/03/2025",
+        intestatario:"BRIANZACQUE S.r.l.",
+        descrizione: "Fornitura acqua potabile 1° periodo 2025",
+        importo:"1265,00" ,
+        contestata:false,
+    },
 
    { 
         data:"",
@@ -441,12 +448,7 @@ const fattureAcqua: Fattura[] = [
 ];
 
 const previsioniAcqua: Previsione[] = [
-    { 
-        data:"??/03/2025",
-        intestatario:"BRIANZACQUE S.r.l.",
-        descrizione: "Fornitura acqua potabile 1° periodo 2025",
-        importo:"1200,00" 
-    },
+ 
 
 { 
         data:"??/06/2025",
