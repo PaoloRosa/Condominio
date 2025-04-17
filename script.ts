@@ -695,7 +695,13 @@ const fattureManutenzione:Fattura[]=[
         contestata:false,
     },  
 
-
+{ 
+        data:"17/04/2025",
+        intestatario:"A CINQUE INNOVAZIONE S.R.I.",
+        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Aprile 2025",
+        importo:"169,75",
+        contestata:false,
+    },  
 
     { 
         data:"",
@@ -709,13 +715,6 @@ const fattureManutenzione:Fattura[]=[
 ];
 
 const previsioniCertificazione:Previsione[]=[
-   { 
-        data:"??/??/2025",
-        intestatario:"SICIT S.R.L.",
-        descrizione: "Verifica periodica impianto ascensore + posa targhetta regolamentare",
-        importo:"176,00" ,
-    },  
-
    { 
         data:"??/??/2025",
         intestatario:"????????????",
@@ -763,13 +762,7 @@ const previsioniManutenzione:Previsione[]=[
         importo:"500,00" ,
     },  
   
-    { 
-        data:"??/??/2025",
-        intestatario:"A CINQUE INNOVAZIONE S.R.L.",
-        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Aprile 2025",
-        importo:"169,80" ,
-    },  
-
+   
    { 
         data:"??/??/2025",
         intestatario:"A CINQUE INNOVAZIONE S.R.L.",
@@ -853,7 +846,23 @@ const fattureCertificazioni:Fattura[]=[
         importo:"451,40" ,
         contestata:false,
     },      
+ 
     { 
+        data:"10/04/2025",
+        intestatario:"DALLA GIOVANNA GROUP S.R.L.",
+        descrizione: " FATTURA 2600 Verifica sicurezza impianto. Prove di intervento congegni fine corsa. Verifica di sicurezza cabina e controllo regolarità messa a terra sul quadro di manovra e su ogni porta dei piani dei contatti di sicurezza",
+        importo:"66,00" ,
+        contestata:false,
+    },  
+    { 
+        data:"10/04/2025",
+        intestatario:"DALLA GIOVANNA GROUP S.R.L.",
+        descrizione: " FATTURA 2601 Verifica sicurezza impianto. Prove di intervento congegni fine corsa. Verifica di sicurezza cabina e controllo regolarità messa a terra sul quadro di manovra e su ogni porta dei piani dei contatti di sicurezza",
+        importo:"66,00" ,
+        contestata:false,
+    },  
+
+   { 
         data:"",
         intestatario:"",
         descrizione: "Totale",
