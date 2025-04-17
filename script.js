@@ -452,13 +452,6 @@ var fattureSpeseStraordinarie = [
         contestata: false,
     },
     {
-        data: "01/10/2024",
-        intestatario: "FDR Automazioni di Riffaldi Fausto & C S.N.C.",
-        descrizione: "Intervento per sistemazione porta trovata bloccata in apertura e rumorosa ",
-        importo: "63,60",
-        contestata: true,
-    },
-    {
         data: "9/12/2024",
         intestatario: "Cappelletti servizi ambientali S.R.L.",
         descrizione: "intervento su chiamata per spurgo e lavaggio con pulizia tubazioni di scarico di n. 1 fosse biologiche + n. 1 vasca settica + n. 3 pozzetti + rete cucine + sifone principale con discarica e smaltimento",

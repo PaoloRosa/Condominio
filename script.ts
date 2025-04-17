@@ -539,14 +539,7 @@ const fattureSpeseStraordinarie: Fattura[] = [
         importo:"126,50" ,
         contestata:false,
     },
-   
-  { 
-        data:"01/10/2024",
-        intestatario:"FDR Automazioni di Riffaldi Fausto & C S.N.C.",
-        descrizione: "Intervento per sistemazione porta trovata bloccata in apertura e rumorosa ",
-        importo:"63,60" ,
-        contestata:true,
-    },
+  
 
     { 
         data:"9/12/2024",
