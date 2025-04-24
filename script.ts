@@ -1023,13 +1023,6 @@ const fattureVarie: Fattura[] = [
 
 
 const previsioniGiardino: Previsione[] = [
-    { 
-        data:"??/??/2025",
-        intestatario:"Colombo Mirko", 
-        descrizione: "N 4 tagli giardino + 4 bolli 2 euro",
-        importo:"648,00",
-    },
-
    { 
         data:"",
         intestatario:"",
@@ -1039,10 +1032,10 @@ const previsioniGiardino: Previsione[] = [
 ];
 const fattureGiardino: Fattura[] = [
     { 
-        data:"??/??/2025",
+        data:"17/04/2025",
         intestatario:"Colombo Mirko", 
-        descrizione: "N 4 tagli giardino + 4 bolli 2 euro",
-        importo:"0,00",
+        descrizione: "Saldo manutenzione ordinaria 2025",
+        importo:"642,00",
         contestata:false
     },
 
