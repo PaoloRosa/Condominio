@@ -278,6 +278,15 @@ const fattureRiscaldamento: Fattura[] = [
     },  
 
     { 
+        data:"31/03/2025",
+        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
+        descrizione: "teleriscaldamento dal 1/03/2025 al 31/03/2025",
+        importo:"2372,59" ,
+        contestata:false,
+    },  
+
+
+    { 
         data:"",
         intestatario:"",
         descrizione: "Totale",
@@ -287,14 +296,6 @@ const fattureRiscaldamento: Fattura[] = [
 ];
 
 const previsioniRiscaldamento: Previsione[] = [
-
- 
-    { 
-        data:"31/03/2025",
-        intestatario:"A CINQUE TECNOLOGIA S.P.A.",
-        descrizione: "teleriscaldamento dal 1/03/2025 al 31/03/2025",
-        importo:"2265,00" ,
-    }, 
 
     { 
         data:"30/04/2025",
@@ -353,6 +354,15 @@ const fattureEnergiaElettrica: Fattura[] = [
     },
 
    { 
+        data:"31/03/2025",
+        intestatario:"ESA Energie S.P.A.",
+        descrizione: "Fornitura energia elettrica Periodo Marzo 2025",
+        importo:"289,00" ,
+        contestata:false,
+    },
+
+
+   { 
         data:"",
         intestatario:"",
         descrizione: "Totale",
@@ -364,14 +374,6 @@ const fattureEnergiaElettrica: Fattura[] = [
 
 const previsioniEnergiaElettrica: Previsione[] = [
  
-
-
-    { 
-        data:"31/03/2025",
-        intestatario:"ESA Energie S.P.A.",
-        descrizione: "Fornitura energia elettrica Periodo Marzo 2025",
-        importo:"302,00" ,
-    },
     { 
         data:"30/04/2025",
         intestatario:"ESA Energie S.P.A.",
