@@ -12,11 +12,212 @@ interface Previsione{
    importo:string;
 }
 
+interface Movimento{
+   data:string;
+   descrizione:string;
+   cifra:string;
+   esercizioPrecedente:boolean;
+}
+
 let TotaleGlobale:number=0
 let numeroFatture:number=0;
 let TotaleGlobalePrevisione:number=0;
 let PreventivoApprovato:number=53761.00;
+
+let TotaleFlussoDiCassa:number=13160.41;
 const oggi=new Date()
+
+
+var movimentiOttobre:Movimento[]=[
+{
+  data:"Inizio esercizio",
+  descrizione:"Saldo",
+  cifra:"0",
+  esercizioPrecedente:false,
+},
+{
+  data:"01/10/2024",
+  descrizione:"Imposta di bollo 01/07/2024 - 01/10/2024",
+  cifra:"-25,14",
+  esercizioPrecedente:true,
+},
+{
+  data:"",
+  descrizione:"Versamento rate condominiali",
+  cifra:"2061.06",
+  esercizioPrecedente:false,
+},
+{
+  data:"",
+  descrizione:"Fattura A Cinque Tecnologie (?????)",
+  cifra:"-767,00",
+  esercizioPrecedente:true,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"02/10/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"2215.78",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"03/10/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"656.00",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"04/10/2024",
+  descrizione:"3 Fatture Nuova Sfinge",
+  cifra:"-1770.00",
+  esercizioPrecedente:true,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"07/10/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"593.35",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"09/10/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"429.88",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"16/10/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"2024.25",
+  esercizioPrecedente:false,
+},
+{
+  data:"",
+  descrizione:"F24 imposte (????)",
+  cifra:"-106.60",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"18/10/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"15.43",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"24/10/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"300.61",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"29/10/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"364.02",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"31/10/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"2068.54",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"",
+  descrizione:"Fattura SI.AN 513FE 30/05/2024",
+  cifra:"-219.95",
+  esercizioPrecedente:true,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.60",
+  esercizioPrecedente:false,
+},
+{
+  data:"",
+  descrizione:"Fattura Brianzacque del 19/07/2024",
+  cifra:"-532.00",
+  esercizioPrecedente:true,
+},
+
+{
+  data:"",
+  descrizione:"Fattura esa energie del (????)",
+  cifra:"-718.00",
+  esercizioPrecedente:true,
+},
+
+{
+  data:"",
+  descrizione:"Fattura Nuova Sfinge",
+  cifra:"-590.00",
+  esercizioPrecedente:true,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+
+
 const fattureAmministrazione: Fattura[] = [
     { 
         data:"12/11/2024",
@@ -1340,9 +1541,6 @@ function Preventivo():void{
     riga.appendChild(cellaImporto);
  tbody.appendChild(riga)
 
-
-
-
 }
   
 function Consuntivo():void {
@@ -1395,9 +1593,76 @@ function Consuntivo():void {
 
 }
 
+function popolaFlussoDiCassa(Tabella, movimenti:Movimento[]) {
+    var tbody = document.querySelector("#" + Tabella + " tbody");
+    var totale = 0;
+    var iIndex = 0;
+    var Colore = "black";
+    movimenti.forEach(function (movimento) {
+        iIndex++;
+        if (movimento.esercizioPrecedente) {
+            Colore = "gray";
+        }
+        else {
+            Colore = "black";
+        }
+        var riga = document.createElement("tr");
+        var cellaData = document.createElement("td");
+        cellaData.textContent = movimento.data;
+        cellaData.style.color = Colore;
+        var cellaDescrizione = document.createElement("td");
+        cellaDescrizione.textContent = movimento.descrizione;
+        cellaDescrizione.style.color = Colore;
+        var cellaCifra = document.createElement("td");
+        cellaCifra.textContent = movimento.cifra;
+        cellaCifra.textContent = cellaCifra.textContent.replace(/\./g,",")
+        if(movimento.cifra[0]==="-"){
+          cellaCifra.style.color = "red";
+        } else {
+          cellaCifra.style.color = Colore;
+        }
+        cellaCifra.style.textAlign = "right";
+        var cellaTotale = document.createElement("td");
+        cellaTotale.style.textAlign = "right";
+
+        let Importo:string=cellaCifra.textContent.replace(/\./g,"")
+        Importo=Importo.replace(/\,/g,".")
+        const NuovoMovimento:number=Number(Importo)
+
+
+
+
+        TotaleFlussoDiCassa=TotaleFlussoDiCassa+NuovoMovimento;
+        cellaTotale.textContent = TotaleFlussoDiCassa.toFixed(2);
+        cellaTotale.textContent=cellaTotale.textContent.replace(/\./g,",")
+        cellaTotale.style.fontWeight="bold";
+        cellaTotale.style.fontSize="20px";
+        if(TotaleFlussoDiCassa>=0){
+           cellaTotale.style.color="green";
+        } else{
+           cellaTotale.style.color="red";
+        }
+   
+        riga.appendChild(cellaData);
+        riga.appendChild(cellaDescrizione);
+        riga.appendChild(cellaCifra);
+        riga.appendChild(cellaTotale);
+        tbody.appendChild(riga);
+    });
+}
+function FlussoCassa():void{
+
+popolaFlussoDiCassa("tabellaFlussoOttobre",movimentiOttobre)
+
+}
+
+
+
+
 function start():void{
    Consuntivo()
    Preventivo()
+   FlussoCassa()
    window.scrollTo(0,0)
 }
 
