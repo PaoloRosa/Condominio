@@ -17,6 +17,7 @@ interface Movimento{
    descrizione:string;
    cifra:string;
    esercizioPrecedente:boolean;
+   evidenzia:number;
 }
 
 let TotaleGlobale:number=0
@@ -34,24 +35,28 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Saldo",
   cifra:"0",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 {
   data:"01/10/2024",
   descrizione:"Imposta di bollo 01/07/2024 - 01/10/2024",
   cifra:"-25,14",
   esercizioPrecedente:true,
+  evidenzia:0,
 },
 {
   data:"",
   descrizione:"Versamento rate condominiali",
   cifra:"2061.06",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 {
   data:"",
   descrizione:"Fattura A Cinque Tecnologie (?????)",
   cifra:"-767,00",
   esercizioPrecedente:true,
+  evidenzia:0,
 },
 
 {
@@ -59,6 +64,7 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Commissione su bonifici",
   cifra:"-0.70",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -66,6 +72,7 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Versamento rate condominiali",
   cifra:"2215.78",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -73,6 +80,7 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Versamento rate condominiali",
   cifra:"656.00",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -80,12 +88,14 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"3 Fatture Nuova Sfinge",
   cifra:"-1770.00",
   esercizioPrecedente:true,
+  evidenzia:0,
 },
 {
   data:"",
   descrizione:"Commissione su bonifici",
   cifra:"-0.70",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -93,6 +103,7 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Versamento rate condominiali",
   cifra:"593.35",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -100,6 +111,7 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Versamento rate condominiali",
   cifra:"429.88",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -107,12 +119,14 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Versamento rate condominiali",
   cifra:"2024.25",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 {
   data:"",
   descrizione:"F24 imposte (????)",
   cifra:"-106.60",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -120,6 +134,7 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Versamento rate condominiali",
   cifra:"15.43",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -127,6 +142,7 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Versamento rate condominiali",
   cifra:"300.61",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -134,6 +150,7 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Versamento rate condominiali",
   cifra:"364.02",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -141,6 +158,7 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Versamento rate condominiali",
   cifra:"2068.54",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -148,25 +166,29 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Fattura SI.AN 513FE 30/05/2024",
   cifra:"-219.95",
   esercizioPrecedente:true,
+  evidenzia:0,
 },
 {
   data:"",
   descrizione:"Commissione su bonifici",
   cifra:"-0.60",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 {
   data:"",
   descrizione:"Fattura Brianzacque del 19/07/2024",
   cifra:"-532.00",
   esercizioPrecedente:true,
+  evidenzia:0,
 },
 
 {
-  data:"",
-  descrizione:"Fattura esa energie del (????)",
+  data:"VEDERE 07/11",
+  descrizione:"Fattura esa energie PAGAMENTO ERRATO",
   cifra:"-718.00",
   esercizioPrecedente:true,
+  evidenzia:1,
 },
 
 {
@@ -174,6 +196,7 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Fattura Nuova Sfinge",
   cifra:"-590.00",
   esercizioPrecedente:true,
+  evidenzia:0,
 },
 
 {
@@ -181,6 +204,7 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Commissione su bonifici",
   cifra:"-0.70",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -188,6 +212,7 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Commissione su bonifici",
   cifra:"-0.70",
   esercizioPrecedente:false,
+  evidenzia:0,
 },
 
 {
@@ -195,13 +220,975 @@ var movimentiOttobre:Movimento[]=[
   descrizione:"Commissione su bonifici",
   cifra:"-0.70",
   esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+]
+
+var movimentiNovembre:Movimento[]=[
+{
+  data:"04/11/2024",
+  descrizione:"Pagamento Fattura portoncino FDR",
+  cifra:"-6083.00",
+  esercizioPrecedente:true,
+  evidenzia:0,
+},
+{
+  data:"05/11/2024",
+  descrizione:"Fattura Lorenzo Mauri",
+  cifra:"-522,00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"05/11/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"966,02",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Fattura BiElettrica di Besana Simone del 30/09/2024",
+  cifra:"-121,90",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"06/11/2024",
+  descrizione:"Versament0 rate condominiali",
+  cifra:"1602,24",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"07/11/2024",
+  descrizione:"Versament0 rate condominiali",
+  cifra:"429,88",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"VEDERE 31/10",
+  descrizione:"STORNO ESA ENERGIA PAGAMENTO ERRATO",
+  cifra:"718,00",
+  esercizioPrecedente:false,
+  evidenzia:1,
+},
+{
+  data:"08/11/2024",
+  descrizione:"Versament0 rate condominiali",
+  cifra:"554,16",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Pagamento utenze varie  ???",
+  cifra:"-250.00",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+{
+  data:"",
+  descrizione:"Commissioni",
+  cifra:"-2.85",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Fattura ESA Energie (???)",
+  cifra:"-468.00",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"14/11/2024",
+  descrizione:"Fattura Studio Berti (???)",
+  cifra:"-671.00",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.60",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"18/11/2024",
+  descrizione:"Versament0 rate condominiali",
+  cifra:"350,90",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"19/11/2024",
+  descrizione:"Pagamento telematico imposte (TOSAP)",
+  cifra:"-88.30",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"20/11/2024",
+  descrizione:"Pagamento fattura Brianzacque (28/10/2024)",
+  cifra:"-887.00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"21/11/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"656,00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Fattura Gestirsi srl (07/07/2024)",
+  cifra:"-66.67",
+  esercizioPrecedente:true,
+  evidenzia:0,
 },
 
 
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
 
 
+{
+  data:"26/11/2024",
+  descrizione:"Fattura ESA Energie (31/10/2024)",
+  cifra:"-277.00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
 
 
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"28/11/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"500,00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+]
+
+var movimentiDicembre:Movimento[]=[
+{
+  data:"02/12/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"1738.66",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"04/12/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"474.04",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"19/12/2024",
+  descrizione:"Pagamento telematico imposte",
+  cifra:"-6.86",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"24/12/2024",
+  descrizione:"Versamento rate condominiali",
+  cifra:"534.79",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"31/12/2024",
+  descrizione:"int e comp",
+  cifra:"-21.95",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Versamento rate condominiali",
+  cifra:"500.00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+]
+
+var movimentiGennaio:Movimento[]=[
+{
+  data:"03/01/2025",
+  descrizione:"Imposta di bollo 01/10/2024 - 31/12/2024",
+  cifra:"-25.14",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"08/01/2025",
+  descrizione:"Fattura Zeccca Grignani assicurazione (non presente su Mio Condominio)",
+  cifra:"-1550.05",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"10/01/2025",
+  descrizione:"Versamento rate condominiali",
+  cifra:"429.88",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"13/01/2025",
+  descrizione:"Fattura Lorenzo Mauri (23/10/2024)",
+  cifra:"-210.00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"14/01/2025",
+  descrizione:"Fattura LCS Solutions (18/11/2024)",
+  cifra:"-513.68",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"15/01/2025",
+  descrizione:"Fatture ACinque Tecnologia (17/10/2024 e 15/11/2024)",
+  cifra:"-922.75",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Pagamento telematico imposte",
+  cifra:"-260.00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Pagamento telematico imposte",
+  cifra:"-252.00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"17/01/2025",
+  descrizione:"Fattura Ict Genesia (???)",
+  cifra:"-370.52",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"22/01/2025",
+  descrizione:"Fattura mb1 Service (Non presente su Mio Condominio)",
+  cifra:"-28.37",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.60",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"27/01/2025",
+  descrizione:"Versamento rate condominiali",
+  cifra:"491.98",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"30/01/2025",
+  descrizione:"Fattura DelBo (Non presente su Mio Condominio)",
+  cifra:"-1331.32",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"31/01/2025",
+  descrizione:"Fatture Studio Berti (2 Fatture 31/01/2025 427,00 e 610,00)",
+  cifra:"-1037.00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.60",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+]
+var movimentiFebbraio:Movimento[]=[
+{
+  data:"03/01/2025",
+  descrizione:"Fattura Ferro Crea snc N.17-2025-FE del (16/01/2025)" ,
+  cifra:"-95.40",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Fattura Rea Elettrica snc N.60 del (27/01/2025)" ,
+  cifra:"-648.16",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"04/02/2025",
+  descrizione:"Versamento rate condominiali",
+  cifra:"474.04",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Parrocchia San Biagio Affitto sala riunione 27/01/2025",
+  cifra:"-120.00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"05/02/2025",
+  descrizione:"Invictus ",
+  cifra:"-20.05",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"10/02/2025",
+  descrizione:"Fattura SI.AN. Lombardia (non presente su Mio Condominio)",
+  cifra:"-145.75",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"12/02/2025",
+  descrizione:"Fattura Cappelletti N.1268 (30/11/2024)",
+  cifra:"-614.80",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"13/02/2025",
+  descrizione:"Versamento rate condominiali",
+  cifra:"1462.01",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"17/02/2025",
+  descrizione:"Versamento rate condominiali",
+  cifra:"477.77",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"18/02/2025",
+  descrizione:"Pagamento telematico imposte",
+  cifra:"-84.56",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"19/02/2025",
+  descrizione:"Versamento rate condominiali",
+  cifra:"51.35",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"21/02/2025",
+  descrizione:"Versamento rate condominiali",
+  cifra:"300.74",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"24/02/2025",
+  descrizione:"Addebito diretto",
+  cifra:"-59.20",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"25/02/2025",
+  descrizione:"Versamento rate condominiali",
+  cifra:"500.00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Fattura Acinque Tecnologie (16/12/2024)",
+  cifra:"-2800.95",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"26/02/2025",
+  descrizione:"Versamento rate condominiali",
+  cifra:"431.64",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"27/02/2025",
+  descrizione:"Versamento rate condominiali",
+  cifra:"530.05",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"28/02/2025",
+  descrizione:"Versamento rate condominiali",
+  cifra:"1400.06",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+]
+
+var movimentiMarzo:Movimento[]=[
+{
+  data:"03/03/2025",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"1879,58",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"04/03/2025",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"545,45",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"06/03/2025",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"423,28",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Addebito diretto Invictus",
+  cifra:"-25.90",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+
+{
+  data:"10/03/2025",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"1050.00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"13/03/2025",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"745.06",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Fattura Studio Berti (???)",
+  cifra:"-488.00",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.60",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Fattura Avvocato Laura Dameno(12/03/2025)",
+  cifra:"-664.56",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"15/03/2025",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"390.63",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"18/03/2025",
+  descrizione:"Pagamento telematico imposte" ,
+  cifra:"-55.98",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+
+{
+  data:"25/03/2025",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"455.20",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"26/03/2025",
+  descrizione:"Fattura Rea Elettrica N.146 (14/03/2025)",
+  cifra:"-637.00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"28/03/2025",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"441.33",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"BiElettrica di Besana Simone (Non Risulta in Mio Condominio)",
+  cifra:"-74.20",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+]
+var movimentiAprile:Movimento[]=[
+{
+  data:"01/04/2025",
+  descrizione:"int e comp" ,
+  cifra:"-22.90",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"imposta di bollo (01/01/2025 - 31/03/2025)" ,
+  cifra:"-24.96",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Fattura Ferro Crea n. 99-2025-FE (27/03/2025)" ,
+  cifra:"-100.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"04/04/2025",
+  descrizione:"Addebito diretto",
+  cifra:"-6.30",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"378.78",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"09/09/2025",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"946.22",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"10/04/2025",
+  descrizione:"Fattura LCS Solutions srl n.208/A del 2/04/2023" ,
+  cifra:"-398.30",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"15/04/2025",
+  descrizione:"Fattura FDR " ,
+  cifra:"-63.60",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"17/04/2025",
+  descrizione:"Pagamento telematico",
+  cifra:"-143.60",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"18/04/2025",
+  descrizione:"Fattura GD Ambiente e sicurezza n.195/2025 del 31/01/2025" ,
+  cifra:"-448.40",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"23/04/2025",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"667.84",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"28/04/2025",
+  descrizione:"Fattura ESA Energie" ,
+  cifra:"-1586.00",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+
+{
+  data:"",
+  descrizione:"Fattura Brianzacque" ,
+  cifra:"-1220.00",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"4 Fatture Nuova Sfinge" ,
+  cifra:"-2360.00",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Fattura ACinque Tecnologie" ,
+  cifra:"-3995.07",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Fattura ACinque Tecnologie" ,
+  cifra:"-4278.53",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"",
+  descrizione:"Fattura ACinque Innovazione" ,
+  cifra:"-870.70",
+  esercizioPrecedente:false,
+  evidenzia:2,
+},
+{
+  data:"",
+  descrizione:"Commissione su bonifici",
+  cifra:"-0.70",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"29/04/2025",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"84.59",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
+{
+  data:"30/04/2025",
+  descrizione:"Versamento rate condominiali" ,
+  cifra:"1529.41",
+  esercizioPrecedente:false,
+  evidenzia:0,
+},
 
 
 
@@ -794,7 +1781,7 @@ const fattureSpeseStraordinarie: Fattura[] = [
         contestata:false,
     },
 
-{ 
+    { 
         data:"02/04/2025",
         intestatario:"LCS Solutions",
         descrizione: "Intervento con opere di messa in sicurezza crepe scivolo box",
@@ -802,6 +1789,44 @@ const fattureSpeseStraordinarie: Fattura[] = [
         contestata:false,
     },
 
+    { 
+        data:"09/05/2025",
+        intestatario:"LCS Solutions",
+        descrizione: "Prev 424 Gancio cancelletto",
+        importo:"132,00" ,
+        contestata:false,
+    },
+
+    { 
+        data:"09/05/2025",
+        intestatario:"LCS Solutions",
+        descrizione: "Prev 243 Infiltrazioni terrazzo",
+        importo:"4089,69" ,
+        contestata:true,
+    },
+   { 
+        data:"09/05/2025",
+        intestatario:"LCS Solutions",
+        descrizione: "Prev 426 Porta box",
+        importo:"698,50" ,
+        contestata:false,
+    },
+
+  { 
+        data:"09/05/2025",
+        intestatario:"LCS Solutions",
+        descrizione: "Pulizia canale",
+        importo:"495,00" ,
+        contestata:true,
+    },
+
+ { 
+        data:"09/05/2025",
+        intestatario:"LCS Solutions",
+        descrizione: "Rifacimento tombino corridoio box",
+        importo:"318,65" ,
+        contestata:false,
+    },
 
 
    { 
@@ -816,25 +1841,6 @@ const fattureSpeseStraordinarie: Fattura[] = [
 
 const previsioniSpeseStraordinarie: Previsione[] = [
    
-   { 
-        data:"??/??/2025",
-        intestatario:"LCS Solutions",
-        descrizione: "Infiltrazioni terrazzo",
-        importo:"2650,00" ,
-    },
-   { 
-        data:"??/??/2025",
-        intestatario:"LCS Solutions",
-        descrizione: "Porta cortile",
-        importo:"698,50" ,
-    },
-    { 
-        data:"??/??/2025",
-        intestatario:"LCS Solutions",
-        descrizione:"Gancio ferma porte",
-        importo:"132,00" ,
-    },
-
    { 
         data:"",
         intestatario:"",
@@ -892,6 +1898,16 @@ const fattureManutenzione:Fattura[]=[
         importo:"172,80",
         contestata:false,
     },  
+
+{ 
+        data:"05/04/2025",
+        intestatario:"FDR",
+        descrizione: "Intervento ",
+        importo:"63,80",
+        contestata:true,
+    },  
+
+
 
 { 
         data:"17/04/2025",
@@ -1070,18 +2086,12 @@ const fattureCertificazioni:Fattura[]=[
 
 ];
 const previsioniAssicurazione: Previsione[] = [
-    { 
-        data:"??/??/2025",
-        intestatario:"ZECCA GRIGNANI S.R.L. - Ag. REALE MUTUA", 
-        descrizione: "Polizza globale fabbricati dal 30/12/2024 al 30/06/2025",
-        importo:"1519,61",
-    },
 
     { 
         data:"??/??/2025",
         intestatario:"ZECCA GRIGNANI S.R.L. - Ag. REALE MUTUA", 
         descrizione: "Polizza globale fabbricati dal 01/07/2025 al 31/12/2025",
-        importo:"1519,61",
+        importo:"1550,05",
     },
 
    { 
@@ -1091,20 +2101,13 @@ const previsioniAssicurazione: Previsione[] = [
         importo:"" ,
     },
 ];
-const fattureAssicurazione: Fattura[] = [
-    { 
-        data:"??/??/2025",
-        intestatario:"ZECCA GRIGNANI S.R.L. - Ag. REALE MUTUA", 
-        descrizione: "Polizza globale fabbricati dal 30/12/2024 al 30/06/2025",
-        importo:"0,00" ,
-        contestata:false,
-    },
+const fattureAssicurazione: Fattura[] =[
 
     { 
-        data:"??/??/2025",
+        data:"08/01/2025",
         intestatario:"ZECCA GRIGNANI S.R.L. - Ag. REALE MUTUA", 
         descrizione: "Polizza globale fabbricati dal 01/07/2025 al 31/12/2025",
-        importo:"0,00" ,
+        importo:"1550,05" ,
         contestata:false,
     },
 
@@ -1598,29 +2601,47 @@ function popolaFlussoDiCassa(Tabella, movimenti:Movimento[]) {
     var totale = 0;
     var iIndex = 0;
     var Colore = "black";
+    var ColoreBack ="white"
     movimenti.forEach(function (movimento) {
         iIndex++;
         if (movimento.esercizioPrecedente) {
             Colore = "gray";
-        }
-        else {
+        }else{
             Colore = "black";
         }
+  
+ 
+        if (movimento.evidenzia===0){
+            ColoreBack="white";
+        }
+        if (movimento.evidenzia===1) {
+            ColoreBack="yellow";
+        }  
+        if (movimento.evidenzia===2) {
+            ColoreBack="pink";
+        }
+
+
+
         var riga = document.createElement("tr");
         var cellaData = document.createElement("td");
         cellaData.textContent = movimento.data;
         cellaData.style.color = Colore;
+        cellaData.style.backgroundColor=ColoreBack;
         var cellaDescrizione = document.createElement("td");
         cellaDescrizione.textContent = movimento.descrizione;
         cellaDescrizione.style.color = Colore;
+        cellaDescrizione.style.backgroundColor=ColoreBack;
         var cellaCifra = document.createElement("td");
         cellaCifra.textContent = movimento.cifra;
         cellaCifra.textContent = cellaCifra.textContent.replace(/\./g,",")
+        cellaCifra.style.backgroundColor=ColoreBack;
         if(movimento.cifra[0]==="-"){
           cellaCifra.style.color = "red";
         } else {
           cellaCifra.style.color = Colore;
         }
+        cellaCifra.textContent= AddPuntoMigliaia(cellaCifra.textContent)
         cellaCifra.style.textAlign = "right";
         var cellaTotale = document.createElement("td");
         cellaTotale.style.textAlign = "right";
@@ -1637,12 +2658,13 @@ function popolaFlussoDiCassa(Tabella, movimenti:Movimento[]) {
         cellaTotale.textContent=cellaTotale.textContent.replace(/\./g,",")
         cellaTotale.style.fontWeight="bold";
         cellaTotale.style.fontSize="20px";
+        cellaTotale.style.backgroundColor=ColoreBack;
         if(TotaleFlussoDiCassa>=0){
            cellaTotale.style.color="green";
         } else{
            cellaTotale.style.color="red";
         }
-   
+        cellaTotale.textContent= AddPuntoMigliaia(cellaTotale.textContent)
         riga.appendChild(cellaData);
         riga.appendChild(cellaDescrizione);
         riga.appendChild(cellaCifra);
@@ -1653,7 +2675,12 @@ function popolaFlussoDiCassa(Tabella, movimenti:Movimento[]) {
 function FlussoCassa():void{
 
 popolaFlussoDiCassa("tabellaFlussoOttobre",movimentiOttobre)
-
+popolaFlussoDiCassa("tabellaFlussoNovembre",movimentiNovembre)
+popolaFlussoDiCassa("tabellaFlussoDicembre",movimentiDicembre)
+popolaFlussoDiCassa("tabellaFlussoGennaio",movimentiGennaio)
+popolaFlussoDiCassa("tabellaFlussoFebbraio",movimentiFebbraio)
+popolaFlussoDiCassa("tabellaFlussoMarzo",movimentiMarzo)
+popolaFlussoDiCassa("tabellaFlussoAprile",movimentiAprile)
 }
 
 
