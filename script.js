@@ -31,7 +31,7 @@ var movimentiOttobre = [
         descrizione: "Fattura A Cinque Tecnologie (?????)",
         cifra: "-767,00",
         esercizioPrecedente: true,
-        evidenzia: 0,
+        evidenzia: 2,
     },
     {
         data: "",
