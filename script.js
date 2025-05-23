@@ -496,7 +496,7 @@ var movimentiGennaio = [
     },
     {
         data: "17/01/2025",
-        descrizione: "2 Fatture Ict Genesia la prima di 76.20 proforma dell'08/07/2024 (ESERCIZIO PRECEDENTE)la seconda proforma 27/12/2024 fattura 22/01/2025 di 293.82  ",
+        descrizione: "2 Fatture Ict Genesia la prima di 76.70 proforma dell'08/07/2024 (ESERCIZIO PRECEDENTE)la seconda proforma 27/12/2024 fattura 22/01/2025 di 293.82  ",
         cifra: "-370.52",
         esercizioPrecedente: false,
         evidenzia: 0,
