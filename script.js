@@ -14,9 +14,9 @@ var movimentiOttobre = [
     },
     {
         data: "01/10/2024",
-        descrizione: "Imposta di bollo 01/07/2024 - 01/10/2024",
+        descrizione: "Imposta di bollo 01/07/2024 - 01/10/2024 (ESERCIZIO PRECEDENTE))",
         cifra: "-25,14",
-        esercizioPrecedente: true,
+        esercizioPrecedente: false,
         evidenzia: 0,
     },
     {
@@ -56,9 +56,9 @@ var movimentiOttobre = [
     },
     {
         data: "04/10/2024",
-        descrizione: "3 Fatture Nuova Sfinge",
+        descrizione: "3 Fatture Nuova Sfinge (ESERCIZIO PRECEDENTE)",
         cifra: "-1770.00",
-        esercizioPrecedente: true,
+        esercizioPrecedente: false,
         evidenzia: 0,
     },
     {
@@ -126,9 +126,9 @@ var movimentiOttobre = [
     },
     {
         data: "",
-        descrizione: "Fattura SI.AN 513FE 30/05/2024",
+        descrizione: "Fattura SI.AN. 513FE 30/05/2024 (ESERCIZIO PRECEDENTE)",
         cifra: "-219.95",
-        esercizioPrecedente: true,
+        esercizioPrecedente: false,
         evidenzia: 0,
     },
     {
@@ -140,23 +140,23 @@ var movimentiOttobre = [
     },
     {
         data: "",
-        descrizione: "Fattura Brianzacque del 19/07/2024",
+        descrizione: "Fattura Brianzacque del 19/07/2024 (ESERCIZIO PRECEDENTE)",
         cifra: "-532.00",
-        esercizioPrecedente: true,
+        esercizioPrecedente: false,
         evidenzia: 0,
     },
     {
         data: "VEDERE 07/11",
         descrizione: "Fattura esa energie PAGAMENTO ERRATO",
         cifra: "-718.00",
-        esercizioPrecedente: true,
+        esercizioPrecedente: false,
         evidenzia: 1,
     },
     {
         data: "",
         descrizione: "Fattura Nuova Sfinge",
         cifra: "-590.00",
-        esercizioPrecedente: true,
+        esercizioPrecedente: false,
         evidenzia: 0,
     },
     {
@@ -184,9 +184,9 @@ var movimentiOttobre = [
 var movimentiNovembre = [
     {
         data: "04/11/2024",
-        descrizione: "Pagamento Fattura portoncino FDR",
+        descrizione: "Pagamento Fattura portoncino FDR (ESERCIZIO PRECEDENTE)",
         cifra: "-6083.00",
-        esercizioPrecedente: true,
+        esercizioPrecedente: false,
         evidenzia: 0,
     },
     {
@@ -268,7 +268,7 @@ var movimentiNovembre = [
     },
     {
         data: "",
-        descrizione: "Fatture ESA Energie del 18/09/2024 e 19/08/2024",
+        descrizione: "Fatture ESA Energie del 18/08/2024 e 19/09/2024 (ESERCIZIO PRECEDENTE)",
         cifra: "-468.00",
         esercizioPrecedente: false,
         evidenzia: 0,
@@ -282,7 +282,7 @@ var movimentiNovembre = [
     },
     {
         data: "14/11/2024",
-        descrizione: "Fatture Studio Berti FPR 446/24 (data?) FPR 447/24 del 12/11/24",
+        descrizione: "Fatture Studio Berti FPR 446/24 (data?)(183 Euro ESERCIZIO PRECEDENTE)  FPR 447/24 del 12/11/24",
         cifra: "-671.00",
         esercizioPrecedente: false,
         evidenzia: 0,
@@ -331,9 +331,9 @@ var movimentiNovembre = [
     },
     {
         data: "",
-        descrizione: "Fattura Gestirsi srl (07/07/2024)",
+        descrizione: "Fattura Gestirsi srl (07/07/2024) (ESERCIZIO PRECEDENTE)",
         cifra: "-66.67",
-        esercizioPrecedente: true,
+        esercizioPrecedente: false,
         evidenzia: 0,
     },
     {
