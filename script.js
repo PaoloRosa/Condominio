@@ -496,10 +496,10 @@ var movimentiGennaio = [
     },
     {
         data: "17/01/2025",
-        descrizione: "Fattura Ict Genesia (???)",
+        descrizione: "2 Fatture Ict Genesia la prima di 76.20 proforma dell'08/07/2024 (ESERCIZIO PRECEDENTE)la seconda proforma 27/12/2024 fattura 22/01/2025 di 293.82  ",
         cifra: "-370.52",
         esercizioPrecedente: false,
-        evidenzia: 2,
+        evidenzia: 0,
     },
     {
         data: "",
@@ -1765,14 +1765,14 @@ var fattureCertificazioni = [
         data: "27/12/2024",
         intestatario: "ICT GENESIA S.R.L.",
         descrizione: "Verifica periodica impianto messa a terra + fornitura di targa regolamentare",
-        importo: "292,80",
+        importo: "293,82",
         contestata: false,
     },
     {
         data: "22/01/2025",
         intestatario: "ICT GENESIA S.R.L.",
         descrizione: "Analisi acque in base al decreto legislativo 23 febbraio 2023, n. 18 allegato 1 analisi effettute da laboratorio accreditato da accredia com laboratorio di prova secondo la norma UNI CEI En ISO/IEC 17025",
-        importo: "303,78",
+        importo: "283,20",
         contestata: false,
     },
     {
@@ -1876,8 +1876,8 @@ var previsioniVarie = [
     {
         data: "??/??/2025",
         intestatario: "Parrocchia San Biagio",
-        descrizione: "Affitto sala n°1 assemblea ordinaria n°1 assemblea straordinaria",
-        importo: "240,00",
+        descrizione: "Affitto sala n°1 assemblea straordinaria",
+        importo: "120,00",
     },
     {
         data: "??/??/2025",
@@ -1893,6 +1893,12 @@ var previsioniVarie = [
     },
 ];
 var fattureVarie = [
+    { data: "??/??/2025",
+        intestatario: "Parrocchia San Biagio",
+        descrizione: "Affitto sala n°1 assemblea ordinaria",
+        importo: "120,00",
+        contestata: false,
+    },
     {
         data: "??/??/2025",
         intestatario: "Comune di Monza",
