@@ -282,7 +282,7 @@ var movimentiNovembre = [
     },
     {
         data: "14/11/2024",
-        descrizione: "Fatture Studio Berti 446/24 (data?) FPR 447/24 del 12/11/24",
+        descrizione: "Fatture Studio Berti FPR 446/24 (data?) FPR 447/24 del 12/11/24",
         cifra: "-671.00",
         esercizioPrecedente: false,
         evidenzia: 0,
