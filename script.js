@@ -226,14 +226,14 @@ var movimentiNovembre = [
     },
     {
         data: "06/11/2024",
-        descrizione: "Versament0 rate condominiali",
+        descrizione: "Versamento rate condominiali",
         cifra: "1602,24",
         esercizioPrecedente: false,
         evidenzia: 0,
     },
     {
         data: "07/11/2024",
-        descrizione: "Versament0 rate condominiali",
+        descrizione: "Versamento rate condominiali",
         cifra: "429,88",
         esercizioPrecedente: false,
         evidenzia: 0,
@@ -247,17 +247,17 @@ var movimentiNovembre = [
     },
     {
         data: "08/11/2024",
-        descrizione: "Versament0 rate condominiali",
+        descrizione: "Versamento rate condominiali",
         cifra: "554,16",
         esercizioPrecedente: false,
         evidenzia: 0,
     },
     {
         data: "",
-        descrizione: "Pagamento utenze varie  ???",
+        descrizione: "Fattura ESA Energie del 18/10/2024 ",
         cifra: "-250.00",
         esercizioPrecedente: false,
-        evidenzia: 2,
+        evidenzia: 0,
     },
     {
         data: "",
@@ -268,10 +268,10 @@ var movimentiNovembre = [
     },
     {
         data: "",
-        descrizione: "Fattura ESA Energie (???)",
+        descrizione: "Fatture ESA Energie del 18/09/2024 e 19/08/2024",
         cifra: "-468.00",
         esercizioPrecedente: false,
-        evidenzia: 2,
+        evidenzia: 0,
     },
     {
         data: "",
@@ -296,7 +296,7 @@ var movimentiNovembre = [
     },
     {
         data: "18/11/2024",
-        descrizione: "Versament0 rate condominiali",
+        descrizione: "Versamento rate condominiali",
         cifra: "350,90",
         esercizioPrecedente: false,
         evidenzia: 0,
@@ -390,7 +390,7 @@ var movimentiDicembre = [
     {
         data: "24/12/2024",
         descrizione: "Versamento rate condominiali",
-        cifra: "534.79",
+        cifra: "530.79",
         esercizioPrecedente: false,
         evidenzia: 0,
     },
@@ -419,7 +419,7 @@ var movimentiGennaio = [
     },
     {
         data: "08/01/2025",
-        descrizione: "Fattura Zeccca Grignani assicurazione (non presente su Mio Condominio)",
+        descrizione: "Fattura Zecca Grignani assicurazione (non presente su Mio Condominio)",
         cifra: "-1550.05",
         esercizioPrecedente: false,
         evidenzia: 0,
@@ -560,7 +560,7 @@ var movimentiGennaio = [
 ];
 var movimentiFebbraio = [
     {
-        data: "03/01/2025",
+        data: "03/02/2025",
         descrizione: "Fattura Ferro Crea snc N.17-2025-FE del (16/01/2025)",
         cifra: "-95.40",
         esercizioPrecedente: false,
@@ -632,7 +632,7 @@ var movimentiFebbraio = [
     {
         data: "",
         descrizione: "Commissione su bonifici",
-        cifra: "-0.70",
+        cifra: "-0.60",
         esercizioPrecedente: false,
         evidenzia: 0,
     },
@@ -646,7 +646,7 @@ var movimentiFebbraio = [
     {
         data: "",
         descrizione: "Commissione su bonifici",
-        cifra: "-0.70",
+        cifra: "-0.60",
         esercizioPrecedente: false,
         evidenzia: 0,
     },
@@ -874,7 +874,7 @@ var movimentiAprile = [
     {
         data: "",
         descrizione: "imposta di bollo (01/01/2025 - 31/03/2025)",
-        cifra: "-24.96",
+        cifra: "-24.66",
         esercizioPrecedente: false,
         evidenzia: 0,
     },
