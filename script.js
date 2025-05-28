@@ -1175,6 +1175,13 @@ var fatturePulizie = [
         contestata: false,
     },
     {
+        data: "30/04/2025",
+        intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
+        descrizione: "Servizio di pulizia mese di Maggio",
+        importo: "610,00",
+        contestata: false,
+    },
+    {
         data: "",
         intestatario: "",
         descrizione: "Totale",
@@ -1183,12 +1190,6 @@ var fatturePulizie = [
     },
 ];
 var previsioniPulizie = [
-    {
-        data: "31/05/2025",
-        intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
-        descrizione: "Servizio di pulizia mese di Maggio",
-        importo: "610,00",
-    },
     {
         data: "30/06/2025",
         intestatario: "NUOVA SFINGE DI ABDELKADER MOHAMAD",
@@ -1305,6 +1306,13 @@ var fattureRiscaldamento = [
         intestatario: "A CINQUE TECNOLOGIA S.P.A.",
         descrizione: "teleriscaldamento dal 1/03/2025 al 31/03/2025",
         importo: "2372,59",
+        contestata: false,
+    },
+    {
+        data: "23/05/2025",
+        intestatario: "A CINQUE TECNOLOGIA S.P.A.(ELLEBI S.N.C-????)",
+        descrizione: "Lettura contabilizzatori ",
+        importo: "549,00",
         contestata: false,
     },
     {
@@ -1722,12 +1730,6 @@ var previsioniManutenzione = [
         intestatario: "SI.AN. LOMBARDIA S.R.L.",
         descrizione: "Manutenzione semestrale novembre Maggio ",
         importo: "500,00",
-    },
-    {
-        data: "??/??/2025",
-        intestatario: "A CINQUE INNOVAZIONE S.R.L.",
-        descrizione: "Conduzione e manutenzione impianto termico 2024/25 periodo Maggio 2025",
-        importo: "549,80",
     },
     {
         data: "??/??/2025",
