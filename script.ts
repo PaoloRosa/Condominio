@@ -1553,6 +1553,13 @@ const fattureEnergiaElettrica: Fattura[] = [
    { 
         data:"31/03/2025",
         intestatario:"ESA Energie S.P.A.",
+        descrizione: "Fornitura energia elettrica Periodo Aprile 2025",
+        importo:"303,00" ,
+        contestata:false,
+    },
+   { 
+        data:"30/04/2025",
+        intestatario:"ESA Energie S.P.A.",
         descrizione: "Fornitura energia elettrica Periodo Marzo 2025",
         importo:"289,00" ,
         contestata:false,
@@ -1571,13 +1578,7 @@ const fattureEnergiaElettrica: Fattura[] = [
 
 const previsioniEnergiaElettrica: Previsione[] = [
  
-    { 
-        data:"30/04/2025",
-        intestatario:"ESA Energie S.P.A.",
-        descrizione: "Fornitura energia elettrica Periodo Aprile 2025",
-        importo:"262,00" ,
-    },
-
+ 
    { 
         data:"31/05/2025",
         intestatario:"ESA Energie S.P.A.",
