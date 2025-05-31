@@ -123,10 +123,10 @@ var movimentiOttobre:Movimento[]=[
 },
 {
   data:"",
-  descrizione:"F24 imposte (????)",
+  descrizione:"F24 imposte Richiesta spiegazioni",
   cifra:"-106.60",
   esercizioPrecedente:false,
-  evidenzia:0,
+  evidenzia:2,
 },
 
 {
@@ -241,7 +241,7 @@ var movimentiNovembre:Movimento[]=[
   evidenzia:0,
 },
 {
-  data:"05/11/2024",
+  data:"",
   descrizione:"Versamento rate condominiali",
   cifra:"966,02",
   esercizioPrecedente:false,
@@ -355,10 +355,10 @@ var movimentiNovembre:Movimento[]=[
 
 {
   data:"19/11/2024",
-  descrizione:"Pagamento telematico imposte (TOSAP)",
+  descrizione:"Pagamento telematico imposte (Richiesta Spiegazioni TOSAP?)",
   cifra:"-88.30",
   esercizioPrecedente:false,
-  evidenzia:0,
+  evidenzia:2,
 },
 
 {
@@ -449,10 +449,10 @@ var movimentiDicembre:Movimento[]=[
 
 {
   data:"19/12/2024",
-  descrizione:"Pagamento telematico imposte",
+  descrizione:"Pagamento telematico imposte Richiesta Spiegazioni",
   cifra:"-6.86",
   esercizioPrecedente:false,
-  evidenzia:0,
+  evidenzia:2,
 },
 
 {
@@ -495,7 +495,7 @@ var movimentiGennaio:Movimento[]=[
   descrizione:"Fattura Zecca Grignani assicurazione (non presente su Mio Condominio)",
   cifra:"-1550.05",
   esercizioPrecedente:false,
-  evidenzia:0,
+  evidenzia:2,
 },
 
 {
@@ -575,10 +575,10 @@ var movimentiGennaio:Movimento[]=[
 },
 {
   data:"17/01/2025",
-  descrizione:"2 Fatture Ict Genesia la prima di 76.70 proforma dell'08/07/2024 (ESERCIZIO PRECEDENTE)la seconda proforma 27/12/2024 fattura 22/01/2025 di 293.82  ",
+  descrizione:"2 Fatture Ict Genesia la prima di 76.70 proforma dell'08/07/2024 (ESERCIZIO PRECEDENTE)la seconda proforma 27/12/2024 fattura 22/01/2025 di 293.82 FATTURA PROFORMA 76.70 FINITA IN CONSUNTIVO ESERCIZIO PRECEDENTE  ",
   cifra:"-370.52",
   esercizioPrecedente:false,
-  evidenzia:0,
+  evidenzia:1,
 },
 {
   data:"",
@@ -589,7 +589,7 @@ var movimentiGennaio:Movimento[]=[
 },
 {
   data:"22/01/2025",
-  descrizione:"Fattura mb1 Service (Non presente su Mio Condominio)",
+  descrizione:"Fattura mb1 Service Richiesta spiegazioni Non compare su Mio Condominio",
   cifra:"-28.37",
   esercizioPrecedente:false,
   evidenzia:2,
@@ -695,7 +695,7 @@ var movimentiFebbraio:Movimento[]=[
 
 {
   data:"05/02/2025",
-  descrizione:"Invictus ",
+  descrizione:"Invictus Richiesta Spiegazioni Non compare su Mio Condominio ",
   cifra:"-20.05",
   esercizioPrecedente:false,
   evidenzia:2,
@@ -757,7 +757,7 @@ var movimentiFebbraio:Movimento[]=[
 },
 {
   data:"18/02/2025",
-  descrizione:"Pagamento telematico imposte",
+  descrizione:"Pagamento telematico imposte  Richiesta Spiegazioni",
   cifra:"-84.56",
   esercizioPrecedente:false,
   evidenzia:0,
@@ -860,7 +860,7 @@ var movimentiMarzo:Movimento[]=[
 
 {
   data:"",
-  descrizione:"Addebito diretto Invictus",
+  descrizione:"Addebito diretto Invictus  Richiesta Spiegazioni Non Compare in Mio Condominio",
   cifra:"-25.90",
   esercizioPrecedente:false,
   evidenzia:2,
@@ -884,7 +884,7 @@ var movimentiMarzo:Movimento[]=[
 
 {
   data:"",
-  descrizione:"Fattura Studio Berti (???)",
+  descrizione:"Fattura Studio Berti Non figura in Mio Condominio",
   cifra:"-488.00",
   esercizioPrecedente:false,
   evidenzia:2,
@@ -923,7 +923,7 @@ var movimentiMarzo:Movimento[]=[
 },
 {
   data:"18/03/2025",
-  descrizione:"Pagamento telematico imposte" ,
+  descrizione:"Pagamento telematico imposte Fornire Spiegazioni" ,
   cifra:"-55.98",
   esercizioPrecedente:false,
   evidenzia:2,
@@ -1048,7 +1048,7 @@ var movimentiAprile:Movimento[]=[
 
 {
   data:"15/04/2025",
-  descrizione:"Fattura FDR " ,
+  descrizione:"Fattura FDR - Era stata contestata perchè intervento in garanzia Scomparsa da Mio Condominio" ,
   cifra:"-63.60",
   esercizioPrecedente:false,
   evidenzia:2,
@@ -1062,18 +1062,18 @@ var movimentiAprile:Movimento[]=[
 },
 {
   data:"17/04/2025",
-  descrizione:"Pagamento telematico",
+  descrizione:"Pagamento telematico  Richiesta Spiegazioni",
   cifra:"-143.60",
   esercizioPrecedente:false,
-  evidenzia:0,
+  evidenzia:2,
 },
 
 {
   data:"18/04/2025",
-  descrizione:"Fattura GD Ambiente e sicurezza n.195/2025 del 31/01/2025" ,
+  descrizione:"Fattura GD Ambiente e sicurezza n.195/2025 del 30/01/2025" ,
   cifra:"-448.40",
   esercizioPrecedente:false,
-  evidenzia:2,
+  evidenzia:0,
 },
 {
   data:"",
@@ -1092,10 +1092,10 @@ var movimentiAprile:Movimento[]=[
 
 {
   data:"28/04/2025",
-  descrizione:"Fattura ESA Energie" ,
+  descrizione:"Fattura ESA Energie del 19/04 289 Euro più fatture 1297 Euro non pagate in tempo" ,
   cifra:"-1586.00",
   esercizioPrecedente:false,
-  evidenzia:2,
+  evidenzia:1,
 },
 {
   data:"",
@@ -1107,10 +1107,10 @@ var movimentiAprile:Movimento[]=[
 
 {
   data:"",
-  descrizione:"Fattura Brianzacque" ,
+  descrizione:"Fattura Brianzacque Non pagata in tempo, scadeva 12 Gennaio" ,
   cifra:"-1220.00",
   esercizioPrecedente:false,
-  evidenzia:2,
+  evidenzia:1,
 },
 {
   data:"",
@@ -1135,10 +1135,10 @@ var movimentiAprile:Movimento[]=[
 },
 {
   data:"",
-  descrizione:"Fattura ACinque Tecnologie" ,
+  descrizione:"Fattura ACinque Tecnologie sommata a fattura successiva Totale 8.273.60 Non pagate in tempo" ,
   cifra:"-3995.07",
   esercizioPrecedente:false,
-  evidenzia:2,
+  evidenzia:1,
 },
 {
   data:"",
@@ -1149,10 +1149,10 @@ var movimentiAprile:Movimento[]=[
 },
 {
   data:"",
-  descrizione:"Fattura ACinque Tecnologie" ,
+  descrizione:"Fattura ACinque Tecnologie sommata a fattura precedente Totale 8.273.60 Non pagate in tempo" ,
   cifra:"-4278.53",
   esercizioPrecedente:false,
-  evidenzia:2,
+  evidenzia:1,
 },
 {
   data:"",
@@ -1163,7 +1163,7 @@ var movimentiAprile:Movimento[]=[
 },
 {
   data:"",
-  descrizione:"Fattura ACinque Innovazione" ,
+  descrizione:"Fattura ACinque Innovazione (Perche' 870.70? Fattura 16/04 169,75 e non pagate per 718.95 Totale 888,90)')" ,
   cifra:"-870.70",
   esercizioPrecedente:false,
   evidenzia:2,
