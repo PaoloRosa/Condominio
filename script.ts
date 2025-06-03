@@ -363,7 +363,7 @@ var movimentiNovembre:Movimento[]=[
 
 {
   data:"20/11/2024",
-  descrizione:"Pagamento fattura Brianzacque (28/10/2024)",
+  descrizione:"Pagamento fattura Brianzacque (ESERCIZIO PRECEDENTE)",
   cifra:"-887.00",
   esercizioPrecedente:false,
   evidenzia:0,
